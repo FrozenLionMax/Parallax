@@ -5,7 +5,7 @@
 <p align="center"><strong>AI Co-Pilots That See Work From Every Angle</strong></p>
 
 <p align="center">
-  <code>Autonomous Agents</code> · <code>Intelligent Co-Pilots</code> · <code>Multi-Agent Orchestration</code> · <code>Adaptive Learning</code>
+  <code>10 Autonomous Co-Pilots</code> · <code>Multi-Agent Orchestration</code> · <code>Adaptive Memory</code> · <code>Confidence-Based Trust</code>
 </p>
 
 <p align="center">
@@ -25,16 +25,18 @@
 
 ## 🔥 The Problem: AI Can Chat — But It Can't Work
 
-Today's AI tools are impressive — but they're stuck in a **question-answer loop**.
+Today's AI is stuck in a **question-answer loop**:
 
 ```
-You: "Analyze this data"          →  AI: [answers]
-You: "Now make a chart"           →  AI: [answers]
+You: "Research competitors"       →  AI: [answers]
+You: "Now analyze the data"       →  AI: [answers]
 You: "Now write a report"         →  AI: [answers]
-You: "Now email it to the team"   →  AI: "I can't do that"
-```
+You: "Now design a slide"         →  AI: "I can't do that"
+You: "Now email it to the team"   →  AI: "I can't do that either"
+You: "Now schedule a review"      →  AI: "I can't do that either"
 
-**You're still the project manager, the coordinator, the copy-paster, the quality checker.** AI handles individual tasks, but YOU stitch them together. That's not a co-pilot — that's a tool you have to babysit.
+YOU are still the project manager. AI does tasks. YOU do the work.
+```
 
 | The Harsh Reality | The Number |
 |---|---|
@@ -43,193 +45,257 @@ You: "Now email it to the team"   →  AI: "I can't do that"
 | Workday lost to coordination, not real work | **62%** *(Asana Work Index)* |
 | Hours/week searching for information | **9.3 hrs** *(McKinsey)* |
 
-**The real problem isn't that AI isn't smart enough — it's that AI doesn't DO enough.**
-
-We don't need another chatbot. We need AI co-pilots that can take a complex task, break it down, execute it across tools, make smart judgment calls, ask you only when it truly needs to, and deliver finished work.
+**AI isn't failing because it isn't smart enough — it's failing because it doesn't DO enough.** We need co-pilots that handle the full spectrum of work — from research to execution to follow-up.
 
 ---
 
 ## 💡 The Solution: Parallax
 
-**Parallax** is a system of **autonomous AI co-pilots** — specialized agents that don't just assist you, they **work alongside you**, handling complex multi-step workflows from start to finish.
+**Parallax** is a system of **10 autonomous AI co-pilots** — each one purpose-built for a different dimension of knowledge work. Together, they handle complex workflows from intent to execution to follow-up.
 
 ### Why "Parallax"?
 
 In optics, **parallax** is the shift in perspective when you view something from different angles — revealing depth that a single viewpoint misses.
 
-That's exactly what our AI co-pilots do:
-- **The Research Co-Pilot** sees your task through the lens of information gathering
-- **The Analyst Co-Pilot** sees it through data patterns and insights
-- **The Creator Co-Pilot** sees it through content, communication, and audience
-- **The Action Co-Pilot** sees it through execution — what actually needs to happen
-- **The Quality Co-Pilot** sees it through accuracy, bias, and completeness
-
-**One task. Five perspectives. Depth that no single AI can provide.**
-
-Together, they form a **co-pilot team** that handles your complex work the way a high-performing team would — in parallel, with specialization, with communication, and with judgment.
+That's exactly what our 10 co-pilots do. One task. **Ten perspectives**. Depth and capability that no single AI can provide.
 
 ---
 
-## 🤖 The 5 AI Co-Pilots
+## 🤖 The 10 AI Co-Pilots
 
-These aren't generic chatbots with different prompts. Each co-pilot is a **purpose-built agent** with its own tools, capabilities, and decision-making.
+### The Core Five — Where Work Gets Done
 
-### 🔍 Research Co-Pilot — "The Investigator"
+---
+
+#### 🔍 Research Co-Pilot — *"The Investigator"*
 
 **What it does**: Finds, verifies, and synthesizes information from any source.
 
-| Capability | Example |
+| Capability | How It Changes Work |
 |---|---|
-| Web search + deep crawling | "Find all AI recruiting startups in India with funding data" |
+| Web search + deep crawling | Finds ALL relevant results, not just page 1 |
 | Document analysis | Reads PDFs, reports, spreadsheets — extracts key facts |
-| Source verification | Scores source credibility (institutional > blog > social media) |
-| Contradiction detection | "Two sources disagree on market size — here's both with credibility scores" |
-| Knowledge extraction | Builds structured data from unstructured sources |
+| Source verification | Scores credibility (institutional > blog > social) |
+| Contradiction detection | Flags conflicting data across sources with evidence |
+| Knowledge extraction | Builds structured data from unstructured noise |
 
-**Real impact**: What takes a human 4-6 hours of Googling, tab-switching, and note-taking → done in 8 minutes with cited sources and confidence scores.
+⏱️ **Impact**: 4-6 hours of manual research → **8 minutes** with cited, verified sources.
 
 ---
 
-### 📊 Analyst Co-Pilot — "The Pattern Finder"
+#### 📊 Analyst Co-Pilot — *"The Pattern Finder"*
 
-**What it does**: Crunches data, finds patterns, generates insights, creates visualizations.
+**What it does**: Crunches data, spots patterns, generates insights, creates visualizations.
 
-| Capability | Example |
+| Capability | How It Changes Work |
 |---|---|
-| Statistical analysis | Trends, correlations, outliers in any dataset |
+| Statistical analysis | Trends, correlations, outliers — automatically surfaced |
 | Comparative analysis | Feature matrices, SWOT, scoring models, benchmarks |
-| Data visualization | Charts, graphs, heat maps — auto-generated from data |
-| Root cause analysis | "Sprint failed because of 3 factors — here's the evidence" |
-| Quantitative forecasting | Simple projection models with confidence intervals |
+| Data visualization | Publication-quality charts, graphs, heat maps |
+| Root cause analysis | "Sprint failed because of 3 factors — here's proof" |
+| Forecasting | Projection models with confidence intervals |
 
-**Real impact**: What takes an analyst 2-3 days of Excel work → done in 10 minutes with publication-quality visualizations.
+⏱️ **Impact**: 2-3 days of Excel grinding → **10 minutes** with insights and charts.
 
 ---
 
-### ✍️ Creator Co-Pilot — "The Wordsmith"
+#### ✍️ Creator Co-Pilot — *"The Wordsmith"*
 
-**What it does**: Generates polished, audience-aware content — documents, emails, presentations, code.
+**What it does**: Generates polished, audience-aware content — docs, emails, decks, code.
 
-| Capability | Example |
+| Capability | How It Changes Work |
 |---|---|
-| Audience-aware writing | Same insights, different tone for board vs engineering team |
-| Document generation | Strategy docs, reports, proposals — professionally formatted |
-| Email drafting | Personalized outreach with context from research |
-| Presentation creation | Slide content with narrative flow and data integration |
-| Code generation | Scripts, queries, automation code with documentation |
+| Audience-aware writing | Same insight, different tone for board vs engineers |
+| Document generation | Strategy docs, proposals, reports — professionally formatted |
+| Email drafting | Personalized outreach with deep context |
+| Presentation content | Slide narratives with data integration |
 
-**Real impact**: What takes a PM 6 hours to draft and format → done in 12 minutes, board-ready, with citations.
+⏱️ **Impact**: 6 hours to draft and format → **12 minutes**, board-ready with citations.
 
-**The key innovation — audience adaptation:**
+**Audience adaptation in action:**
 ```
 Same insight, three audiences:
 
-📊 Board:    "Market opportunity: ₹3,200 Cr (IMARC 2025). 
-              3.2x growth projected by 2028."
-
-💻 Eng Team: "14 competitors mapped. Key differentiator gap: 
-              none have real-time behavioral signal integration. 
-              Feasibility: HIGH, requires ~3 sprint cycles."
-
-💼 Sales:    "Top 3 competitors to watch: [X], [Y], [Z]. 
-              Our edge: [3 specific talking points with proof]."
+📊 Board:    "Market: ₹3,200 Cr (IMARC 2025). 3.2x growth by 2028."
+💻 Eng:      "14 competitors mapped. Gap: real-time behavioral signals. 
+              Feasibility: HIGH, ~3 sprints."
+💼 Sales:    "Top 3 to watch: [X], [Y], [Z]. Our edge: [3 talking points]."
 ```
 
 ---
 
-### ⚡ Action Co-Pilot — "The Executor"
+#### ⚡ Action Co-Pilot — *"The Executor"*
 
-**What it does**: Takes real-world actions — sends emails, creates tickets, schedules meetings, updates systems.
+**What it does**: Takes real-world actions — the "last mile" that other AI tools completely miss.
 
-| Capability | Example |
+| Capability | How It Changes Work |
 |---|---|
-| Email sending | Sends approved outreach via Gmail/Outlook API |
-| Ticket creation | Creates JIRA/Linear issues with full context |
-| Calendar management | Schedules meetings, sends invites |
-| Notifications | Posts updates to Slack channels |
-| File management | Uploads deliverables to Drive/Notion |
+| Send emails | Via Gmail/Outlook API with personalization |
+| Create tickets | JIRA/Linear issues with full context and labels |
+| Schedule meetings | Calendar invites with agendas auto-generated |
+| Post updates | Slack/Teams notifications to the right channels |
+| Upload files | Drive/Notion with proper organization |
 
-**Safety model**: The Action Co-Pilot **never acts without approval** for:
-- ❗ External communications (emails to people outside your org)
-- ❗ System modifications (code deploys, database changes)
-- ❗ Financial actions
-- ❗ Anything affecting other people's calendars
+**Safety**: Never acts without approval for external communications, system changes, or financial actions.
 
-**Real impact**: The "last mile" that other AI tools completely miss. Your research is done, your doc is drafted — and the Action Co-Pilot actually sends it, creates the follow-up tasks, and schedules the review meeting. **Done, not just drafted.**
+⏱️ **Impact**: Your research is done, doc is drafted — and the Action Co-Pilot actually **sends it, creates the follow-up tasks, and schedules the review meeting.** Done, not just drafted.
 
 ---
 
-### 🛡️ Quality Co-Pilot — "The Guardian"
+#### 🛡️ Quality Co-Pilot — *"The Guardian"*
 
-**What it does**: Reviews everything before it reaches you or anyone else. The built-in quality gate.
+**What it does**: Reviews everything before it reaches anyone. The built-in quality gate.
 
 | Check | What It Catches |
 |---|---|
 | Factual accuracy | Cross-references claims against original sources |
 | Completeness | "You asked for 5 competitors, only 4 are covered" |
-| Tone & audience | "This is too technical for a board document" |
+| Tone & audience | "Too technical for a board document" |
 | Bias detection | Flags conclusions that may reflect data bias |
-| Recency | "This pricing data is from March — may have changed" |
+| Recency | "This data is from March — it may have changed" |
 | Internal consistency | "Page 3 says ₹2,400 Cr but page 7 says ₹3,200 Cr" |
 
-**Real impact**: Catches the errors you'd find at 2 AM the night before the presentation. Every time. Automatically.
+⏱️ **Impact**: Catches the errors you'd find at 2 AM the night before the deadline. Every time. Automatically.
 
 ---
 
-## 🧠 The Orchestrator — How Co-Pilots Work Together
+### The Extended Five — Where Work Gets Supercharged
+
+---
+
+#### 💬 Communication Co-Pilot — *"The Connector"*
+
+**What it does**: Manages the human side of work — meetings, follow-ups, team alignment.
+
+| Capability | How It Changes Work |
+|---|---|
+| Meeting preparation | Auto-generates agendas from project context |
+| Note-taking & summarization | Extracts key decisions + action items from meeting transcripts |
+| Action item tracking | Assigns, tracks, and follows up on commitments |
+| Follow-up automation | "It's been 3 days since the design review — no update from backend team. Want me to ping them?" |
+| Stakeholder updates | Auto-drafted status reports tailored to each audience |
+
+⏱️ **Impact**: 5+ hours/week on meeting prep, notes, and follow-ups → **handled automatically**. You show up to meetings prepared and leave with tracked action items.
+
+---
+
+#### 💻 Code Co-Pilot — *"The Engineer"*
+
+**What it does**: Writes, reviews, debugs, and deploys code. Not just autocomplete — full engineering workflow.
+
+| Capability | How It Changes Work |
+|---|---|
+| Code generation | Full functions/modules from natural language specs |
+| Code review | Analyzes PRs for bugs, security issues, performance |
+| Debugging | Traces errors, suggests fixes with reasoning |
+| Script automation | "Write a script that cleans our CSV data and uploads to S3" |
+| Documentation | Auto-generates docstrings, READMEs, API docs from code |
+
+**Difference from GitHub Copilot**: Copilot autocompletes lines. The Code Co-Pilot understands the **full project context** — architecture, dependencies, team conventions — and works at the feature level, not the line level.
+
+⏱️ **Impact**: Routine coding tasks (scripts, data cleaning, boilerplate) → **minutes instead of hours**. Code reviews go from "I'll get to it tomorrow" to instant, thorough analysis.
+
+---
+
+#### 📡 Data Co-Pilot — *"The Sensor"*
+
+**What it does**: Connects to live systems, pulls real-time data, monitors metrics.
+
+| Capability | How It Changes Work |
+|---|---|
+| Database queries | Translates natural language → SQL/NoSQL queries |
+| API integration | Pulls data from any REST/GraphQL API |
+| Dashboard monitoring | "Alert me if conversion rate drops below 2%" |
+| Data pipeline checks | "Is yesterday's ETL pipeline healthy?" |
+| Real-time metrics | "What's our MRR as of today?" → instant answer from live data |
+
+**Difference from the Analyst**: The Analyst processes data you already have. The Data Co-Pilot **acquires data** from live production systems.
+
+⏱️ **Impact**: No more logging into 5 dashboards every morning. Ask once, get a real-time answer. Set up monitoring alerts in natural language.
+
+---
+
+#### 🎨 Design Co-Pilot — *"The Architect"*
+
+**What it does**: Creates visual designs, wireframes, presentation layouts, and brand-consistent assets.
+
+| Capability | How It Changes Work |
+|---|---|
+| UI/UX wireframes | From description to visual wireframe in minutes |
+| Presentation design | Layouts, color schemes, typography — polished slides |
+| Diagram generation | Architecture diagrams, flowcharts, org charts |
+| Brand consistency | Applies your brand colors, fonts, logos automatically |
+| Image creation | Generates custom illustrations and icons |
+
+⏱️ **Impact**: "I need a slide deck for tomorrow's pitch" → **professionally designed layouts** in minutes. No more fighting with PowerPoint templates at midnight.
+
+---
+
+#### 🔐 Compliance Co-Pilot — *"The Sentinel"*
+
+**What it does**: Ensures every output meets regulatory, legal, and organizational policy requirements.
+
+| Capability | How It Changes Work |
+|---|---|
+| Regulatory scanning | Checks content against GDPR, DPDPA, HIPAA, SOC-2 rules |
+| Policy enforcement | "This email contains customer PII — mask before sending" |
+| Contract review | Flags risky clauses, missing terms, non-standard language |
+| Audit trail | Immutable log of every co-pilot action for compliance audits |
+| Data classification | Auto-labels data as public/internal/confidential/restricted |
+
+⏱️ **Impact**: Legal and compliance review that takes days → **instant automated checks** before any content leaves the system. Especially critical for enterprises in regulated industries (fintech, healthtech, legal).
+
+---
+
+## 🧠 The Orchestrator — How 10 Co-Pilots Work Together
 
 The co-pilots don't work in isolation — they're coordinated by a central **Orchestrator** that acts as the project manager:
 
 ```
 ┌─────────────────────────────────────────────────────────────────────┐
-│                      YOU (Natural Language)                         │
-│  "Prepare a competitive analysis for our board meeting Tuesday"    │
+│                           YOU                                       │
+│     "Prepare a competitive analysis for the board meeting"          │
 └──────────────────────────────┬──────────────────────────────────────┘
                                │
 ┌──────────────────────────────▼──────────────────────────────────────┐
-│                   🧠 ORCHESTRATOR                                   │
-│                                                                     │
-│   ┌──────────────┐   ┌───────────────┐   ┌───────────────────────┐ │
-│   │ UNDERSTAND    │   │ DECOMPOSE     │   │ COORDINATE            │ │
-│   │               │   │               │   │                       │ │
-│   │ What do you   │   │ Break into    │   │ Route to co-pilots,   │ │
-│   │ actually need?│   │ parallel &    │   │ monitor progress,     │ │
-│   │ For whom?     │   │ sequential    │   │ resolve conflicts,    │ │
-│   │ By when?      │   │ sub-tasks     │   │ merge results         │ │
-│   └──────────────┘   └───────────────┘   └───────────────────────┘ │
-└───────┬────────────────────┬───────────────────┬──────────┬────────┘
-        │                    │                   │          │
-  ┌─────▼─────┐       ┌─────▼─────┐      ┌─────▼────┐ ┌───▼───┐
-  │🔍Research │       │📊Analyst  │      │✍️Creator │ │⚡Action│
-  │ Co-Pilot  │──────▶│ Co-Pilot  │─────▶│ Co-Pilot │ │Co-Pilot│
-  └───────────┘       └───────────┘      └──────────┘ └───────┘
-                                               │
-                                         ┌─────▼─────┐
-                                         │🛡️Quality  │
-                                         │ Co-Pilot  │
-                                         └───────────┘
-                                               │
-                                          ✅ DELIVERED
+│                    🧠 ORCHESTRATOR                                  │
+│      Understand Intent → Decompose Tasks → Coordinate Co-Pilots     │
+└───┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────────┘
+    │     │     │     │     │     │     │     │     │     │
+  ┌─▼─┐ ┌─▼─┐ ┌─▼─┐ ┌─▼─┐ ┌─▼─┐ ┌─▼─┐ ┌─▼─┐ ┌─▼─┐ ┌─▼─┐ ┌─▼─┐
+  │🔍 │ │📊 │ │✍️ │ │⚡ │ │🛡️ │ │💬 │ │💻 │ │📡 │ │🎨 │ │🔐 │
+  │INV│ │PAT│ │WOR│ │EXE│ │GUA│ │CON│ │ENG│ │SEN│ │ARC│ │SNT│
+  └───┘ └───┘ └───┘ └───┘ └───┘ └───┘ └───┘ └───┘ └───┘ └───┘
 ```
+
+**The Orchestrator decides which co-pilots to activate per task.** A competitive analysis might use Research + Data + Analyst + Creator + Design + Quality. A sprint retro might use Data + Analyst + Communication + Creator + Quality. Not every task uses all 10.
 
 ### How co-pilots communicate:
 
 ```
-🔍 Research → 📊 Analyst:
-   "Found 3 conflicting data points on market size. Here are 
-    all sources with credibility scores. Your call on which to use."
+📡 Data → 📊 Analyst:
+   "Pulled live metrics from the dashboard. Conversion 
+    dropped 15% last week. Here's the raw data."
 
 📊 Analyst → ✍️ Creator:
-   "Key finding: market is 3x larger than assumed. Flag this 
-    prominently — it changes the strategy recommendation."
+   "Root cause: mobile checkout flow regression after 
+    Tuesday's deploy. Frame this carefully for the board."
+
+✍️ Creator → 🎨 Design:
+   "Strategy doc ready. Need 3 charts: market map, feature 
+    matrix, growth projection. Use brand colors."
 
 🛡️ Quality → ✍️ Creator:
-   "Paragraph 3 says 'latest data' but the source is from March.
-    Add the date explicitly to avoid misleading the board."
+   "Paragraph 3 says 'latest data' but source is from March.
+    Add the date explicitly."
 
-🧠 Orchestrator → You:
-   "Research and analysis complete. Strategy document ready for 
-    your review. 1 item needs your decision before finalizing."
+🔐 Compliance → ⚡ Action:
+   "This email contains a customer's name. Anonymize before 
+    sending to external recipients."
+
+💬 Communication → You:
+   "Board meeting in 2 hours. Prep materials ready. 
+    Want me to send the pre-read to attendees now?"
 ```
 
 ---
@@ -250,26 +316,23 @@ The co-pilots don't work in isolation — they're coordinated by a central **Orc
 
 ### The Trust Model — Co-Pilots Earn Autonomy
 
-This is what makes Parallax feel like a real co-pilot, not a tool you babysit:
-
 ```
-Co-Pilot Confidence > 90%  →  Does it. Tells you after.
-                               "✅ Research complete. 14 competitors found."
+Confidence > 90%   →  Does it. Tells you after.
+                      "✅ Research complete. 14 competitors found."
 
-Co-Pilot Confidence 70-90% →  Does it. Asks before delivering.
-                               "📋 Strategy doc ready. Review before I send?"
+Confidence 70-90%  →  Does it. Asks before delivering.
+                      "📋 Strategy doc ready. Review before I send?"
 
-Co-Pilot Confidence < 70%  →  Stops. Asks you to decide.
-                               "🤔 Found conflicting data. Which source?"
+Confidence < 70%   →  Stops. Asks you to decide.
+                      "🤔 Found conflicting data. Which source?"
 
-Co-Pilot STUCK              →  Full escalation with context.
-                               "⚠️ Can't find pricing for 3 competitors.
-                                How should I handle this?"
+Co-Pilot STUCK     →  Full escalation with context.
+                      "⚠️ Can't find pricing for 3 companies. Options?"
 ```
 
-**The key insight**: Parallax starts cautious and earns your trust over time. As it learns your preferences, it becomes more autonomous — like a new team member becoming a trusted colleague.
+**Parallax starts cautious and earns your trust over time** — like a new team member becoming a trusted colleague.
 
-> 📖 **Detailed scenarios**: See [docs/user-journey.md](docs/user-journey.md) for 3 complete walkthroughs (PM, Engineer, Startup Founder)
+> 📖 **Detailed scenarios**: See [docs/user-journey.md](docs/user-journey.md) for 3 complete walkthroughs
 
 ---
 
@@ -282,60 +345,58 @@ Co-Pilot STUCK              →  Full escalation with context.
 ├─────────────────────────────────────────────────────────────────────┤
 │                    LAYER 2: ORCHESTRATION ENGINE                    │
 │    Intent Parser → Task Decomposer → DAG Scheduler → Co-Pilot      │
-│                                                         Router     │
+│                                                        Router      │
 ├─────────────────────────────────────────────────────────────────────┤
-│                    LAYER 3: AI CO-PILOT POOL                       │
-│    🔍 Research  │ 📊 Analyst │ ✍️ Creator │ ⚡ Action │ 🛡️ Quality │
+│                    LAYER 3: AI CO-PILOT FLEET (10)                  │
+│  🔍 Research │📊 Analyst │✍️ Creator │⚡ Action │🛡️ Quality        │
+│  💬 Comms    │💻 Code    │📡 Data    │🎨 Design │🔐 Compliance     │
 ├─────────────────────────────────────────────────────────────────────┤
 │                    LAYER 4: MEMORY & LEARNING                      │
 │    📌 Episodic     │  🧠 Semantic       │  🔄 Procedural           │
 │    (This session)  │  (Knowledge graph) │  (Learned preferences)   │
 ├─────────────────────────────────────────────────────────────────────┤
 │                    LAYER 5: INTEGRATIONS                           │
-│    Slack · Notion · JIRA · GitHub · Gmail · Calendar · Drive · APIs│
+│  Slack · Notion · JIRA · GitHub · Gmail · Calendar · Drive · DBs   │
 ├─────────────────────────────────────────────────────────────────────┤
 │                    LAYER 6: INFRASTRUCTURE                         │
-│    Auth · Audit Logging · Rate Limits · Cost Tracking · Security   │
+│    Auth · Audit Log · Rate Limits · Cost Tracking · Security       │
 └─────────────────────────────────────────────────────────────────────┘
 ```
 
 ### The Memory System — Why Parallax Gets Smarter
 
-| Memory Layer | What It Stores | Why It Matters |
+| Layer | Stores | Why It Matters |
 |---|---|---|
-| **📌 Episodic** (Redis) | Current task state, agent outputs, corrections made right now | Co-pilots know what's happening in this workflow |
-| **🧠 Semantic** (Neo4j) | Knowledge graph — entities, relationships, facts across all sessions | Co-pilots remember what they learned last week |
-| **🔄 Procedural** (Vector DB) | User preferences, workflow templates, quality patterns via RLHF | Co-pilots adapt to YOUR way of working |
+| **📌 Episodic** (Redis) | Current task state, co-pilot outputs, live corrections | Co-pilots know what's happening right now |
+| **🧠 Semantic** (Neo4j) | Knowledge graph — entities, relationships, facts | Co-pilots remember what they learned last week |
+| **🔄 Procedural** (Vector DB) | Preferences, workflow templates, RLHF patterns | Co-pilots adapt to YOUR way of working |
 
-**Example of learning:**
 ```
-Week 1:  You: "Make the exec summary shorter"
-         Parallax: stores preference → bullet points, max 4 items
-
-Week 3:  You: "Always use institutional sources for market data"
-         Parallax: stores preference → prioritize Nasscom, Gartner over blogs
-
-Week 8:  Parallax automatically produces exec summaries in your preferred
-         format, uses institutional sources first, and knows your board 
-         prefers charts over tables. You didn't have to tell it again.
+Week 1:  "Make exec summaries shorter" → stored
+Week 3:  "Use institutional sources for market data" → stored
+Week 8:  Parallax auto-produces summaries in YOUR format, uses YOUR 
+         preferred sources, knows YOUR board's preferences. 
+         You didn't have to tell it again.
 ```
 
-> 📖 **Full architecture deep-dive**: See [docs/architecture.md](docs/architecture.md)
+> 📖 **Full architecture**: See [docs/architecture.md](docs/architecture.md)
 
 ---
 
 ## 🔬 What Makes Parallax Different
 
-| | ChatGPT / Gemini | GitHub Copilot | Microsoft Copilot | **Parallax** |
+| | ChatGPT | Copilot | MS Copilot | **Parallax** |
 |---|---|---|---|---|
-| **Handles multi-step workflows** | ❌ One prompt at a time | ❌ Code only | ⚠️ Basic | ✅ Full task DAGs |
-| **Specialized co-pilots** | ❌ One generalist | ❌ Code assistant | ❌ Office assistant | ✅ 5 purpose-built co-pilots |
-| **Remembers across sessions** | ❌ Forgets | ❌ Forgets | ⚠️ Basic context | ✅ 3-layer memory |
-| **Takes real actions** | ❌ Can't send/create | ❌ Code only | ⚠️ M365 only | ✅ Any API, with safety |
-| **Works autonomously** | ❌ Needs prompting | ❌ Needs prompting | ❌ Needs prompting | ✅ Confidence-based autonomy |
-| **Quality-checks itself** | ❌ You verify | ❌ You verify | ❌ You verify | ✅ Built-in Quality Co-Pilot |
-| **Gets smarter over time** | ❌ Static | ❌ Static | ❌ Static | ✅ RLHF + preference learning |
-| **Works across all domains** | ✅ General | ❌ Code only | ⚠️ Office only | ✅ Universal |
+| Multi-step workflows | ❌ | ❌ | ⚠️ | ✅ Full DAGs |
+| Specialized co-pilots | ❌ | ❌ | ❌ | ✅ **10 purpose-built** |
+| Persistent memory | ❌ | ❌ | ⚠️ | ✅ 3-layer system |
+| Real-world actions | ❌ | ❌ | ⚠️ M365 | ✅ Any API |
+| Autonomous execution | ❌ | ❌ | ❌ | ✅ Trust-based |
+| Quality assurance | ❌ | ❌ | ❌ | ✅ Built-in QA |
+| Compliance checks | ❌ | ❌ | ❌ | ✅ Built-in |
+| Visual design | ❌ | ❌ | ❌ | ✅ Design co-pilot |
+| Live data access | ❌ | ❌ | ⚠️ | ✅ Any DB/API |
+| Learns over time | ❌ | ❌ | ❌ | ✅ RLHF |
 
 ---
 
@@ -345,13 +406,15 @@ Week 8:  Parallax automatically produces exec summaries in your preferred
 |---|---|---|
 | **Orchestration** | LangGraph / Custom DAG | Stateful agent graphs with dependencies |
 | **LLMs** | GPT-4o / Claude / Llama 3 | Swappable, no vendor lock-in |
-| **Knowledge Graph** | Neo4j | Entity-relationship modeling for semantic memory |
-| **Vector Store** | FAISS / Qdrant | Fast similarity search for RAG + procedural memory |
-| **Real-time State** | Redis | Sub-ms reads for live co-pilot coordination |
-| **Persistent Storage** | PostgreSQL + pgvector | Durable memory with vector search |
-| **Message Bus** | Redis Streams | Ordered inter-co-pilot communication |
-| **Backend** | FastAPI (Python) | Async-native, optimized for AI workloads |
-| **Frontend** | React + WebSockets | Real-time co-pilot progress dashboard |
+| **Knowledge Graph** | Neo4j | Entity-relationship modeling |
+| **Vector Store** | FAISS / Qdrant | RAG + procedural memory |
+| **Real-time State** | Redis | Sub-ms co-pilot coordination |
+| **Storage** | PostgreSQL + pgvector | Durable memory with vector search |
+| **Message Bus** | Redis Streams | Inter-co-pilot communication |
+| **Backend** | FastAPI (Python) | Async-native AI workloads |
+| **Frontend** | React + WebSockets | Real-time dashboard |
+| **Design Engine** | Stable Diffusion + Figma API | Visual generation |
+| **Code Sandbox** | Docker + E2B | Safe code execution |
 
 ---
 
@@ -361,12 +424,12 @@ Week 8:  Parallax automatically produces exec summaries in your preferred
 Phase 1: Foundation            Phase 2: Expansion              Phase 3: Intelligence
 (0-3 months)                   (3-6 months)                    (6-12 months)
 ────────────────────           ────────────────────            ────────────────────
-✅ Core Orchestrator            🔧 Custom co-pilot builder      🚀 Self-improving RLHF
-✅ 5 Base Co-Pilots             🔧 Co-pilot marketplace         🚀 Industry co-pilot packs
+✅ Core Orchestrator            🔧 Co-Pilot Marketplace         🚀 Self-improving RLHF
+✅ 10 Base Co-Pilots            🔧 Custom co-pilot builder      🚀 Industry co-pilot packs
 ✅ 3-Layer Memory               🔧 Enterprise SSO + RBAC        🚀 Multi-user collaboration
-✅ 5 tool integrations          🔧 15+ integrations             🚀 On-premise deployment
+✅ 8 tool integrations          🔧 20+ integrations             🚀 On-premise deployment
 ✅ Single-user beta             🔧 Team workspaces              🚀 Voice + mobile
-                                🔧 Analytics dashboard          🚀 API for 3rd-party co-pilots
+                                🔧 SOC-2 compliance             🚀 API for 3rd-party co-pilots
 ```
 
 ---
@@ -387,10 +450,11 @@ Phase 1: Foundation            Phase 2: Expansion              Phase 3: Intellig
 
 | | |
 |---|---|
-| **Team Name** | Parallax |
+| **Team** | Parallax |
 | **System** | Parallax — AI Co-Pilots That See Work From Every Angle |
 | **Hackathon** | IndiaRuns Hackathon 2026 |
 | **Track** | Ideathon — Challenge 1: AI Systems Architect |
+| **GitHub** | https://github.com/FrozenLionMax/Parallax |
 
 ---
 
