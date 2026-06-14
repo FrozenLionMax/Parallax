@@ -1,12 +1,12 @@
-# Aether — Technical Architecture
+# Parallax — Technical Architecture
 
-> **Deep-dive into the system design of Aether — The Invisible Intelligence Layer**
+> **Deep-dive into the system design of Parallax — AI Co-Pilots That See Work From Every Angle**
 
 ---
 
 ## 1. System Architecture Overview
 
-Aether follows a **layered architecture** with clear separation of concerns. Each layer has a specific responsibility and communicates through well-defined interfaces.
+Parallax follows a **layered architecture** with clear separation of concerns. Each layer has a specific responsibility and communicates through well-defined interfaces.
 
 ```
 ┌─────────────────────────────────────────────────────────────────────┐
@@ -16,7 +16,7 @@ Aether follows a **layered architecture** with clear separation of concerns. Eac
 │                    LAYER 2: ORCHESTRATION ENGINE                    │
 │  Intent Parser → Task Decomposer → DAG Scheduler → Agent Router    │
 ├─────────────────────────────────────────────────────────────────────┤
-│                    LAYER 3: AGENT POOL                              │
+│                    LAYER 3: AI CO-PILOT POOL                              │
 │  Research │ Analyst │ Creator │ Executor │ Quality │ [Custom]       │
 ├─────────────────────────────────────────────────────────────────────┤
 │                    LAYER 4: SHARED MEMORY                           │
@@ -519,7 +519,7 @@ The thresholds are **not static** — they evolve:
   "content_hash": "sha256:abc123..."
 }
 ```
-Every agent action is logged immutably. Enterprise admins can audit exactly what Aether did, when, and who approved it.
+Every agent action is logged immutably. Enterprise admins can audit exactly what Parallax did, when, and who approved it.
 
 ### 7.3 Agent Sandboxing
 - Research Agent: read-only web access, no file writes
@@ -546,7 +546,7 @@ Every agent action is logged immutably. Enterprise admins can audit exactly what
           │              │              │
           └──────────────┼──────────────┘
                          │
-                   Agent Pool
+                   AI CO-PILOT POOL
               (Auto-scaled per type)
 ```
 
@@ -559,3 +559,4 @@ Every agent action is logged immutably. Enterprise admins can audit exactly what
 ---
 
 *This architecture document is maintained by Team Parallax for the IndiaRuns Hackathon 2026.*
+

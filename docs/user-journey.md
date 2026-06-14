@@ -1,6 +1,6 @@
-# Aether — User Journey
+# Parallax — User Journey
 
-> **Three real-world scenarios showing how Aether transforms complex knowledge work**
+> **Three real-world scenarios showing how Parallax transforms complex knowledge work**
 
 ---
 
@@ -16,7 +16,7 @@ A PM at an AI startup needs a board-ready competitive analysis in 3 days.
 **User input:**
 > *"Prepare a competitive analysis of AI recruiting tools in India and draft a strategy document for our board meeting next Tuesday. Focus on pricing, key features, market positioning, and where we can differentiate."*
 
-**What Aether understands (Intent Parser output):**
+**What Parallax understands (Intent Parser output):**
 
 | Dimension | Extracted |
 |---|---|
@@ -32,7 +32,7 @@ A PM at an AI startup needs a board-ready competitive analysis in 3 days.
 
 ### 🗺️ STEP 2 — PLAN
 
-**Aether presents the task graph to the user:**
+**Parallax presents the task graph to the user:**
 
 ```
 📋 EXECUTION PLAN — Competitive Analysis + Strategy Document
@@ -114,7 +114,7 @@ A PM at an AI startup needs a board-ready competitive analysis in 3 days.
 
 **User clicks** ✅ Use recommendation.
 
-**Aether stores this preference in Procedural Memory:**
+**Parallax stores this preference in Procedural Memory:**
 > *"User prefers: for market data, prioritize recent institutional reports over older ones. Avoid blog sources for quantitative claims."*
 
 ---
@@ -153,7 +153,7 @@ A PM at an AI startup needs a board-ready competitive analysis in 3 days.
 
 > 👍 *"Great analysis. Two notes for next time: (1) Always include a 'So What?' section at the end of each competitor profile — what it means for us specifically. (2) The exec summary was perfect at 4 bullets — keep that length."*
 
-**Aether stores in Procedural Memory:**
+**Parallax stores in Procedural Memory:**
 - Competitive analyses should include a "So What?" section per competitor
 - Executive summaries: 4 bullet points is the ideal length for this user
 - Board documents: 14 pages is acceptable length
@@ -408,15 +408,16 @@ A founder needs to identify the best VC matches for their AI startup's Series A.
 
 ## Key Takeaways Across All Scenarios
 
-| Principle | How Aether Delivers |
+| Principle | How Parallax Delivers |
 |---|---|
 | **Complex work, simple input** | Natural language → full workflow execution |
 | **Parallel efficiency** | Multiple agents work simultaneously |
 | **Intelligent escalation** | Only bothers the user when genuinely needed |
 | **Domain adaptation** | Same system works for PM, engineering, and business tasks |
 | **Progressive trust** | System earns autonomy through consistent quality |
-| **Continuous improvement** | Every interaction makes Aether smarter |
+| **Continuous improvement** | Every interaction makes Parallax smarter |
 
 ---
 
 *Team Parallax · IndiaRuns Hackathon 2026*
+
