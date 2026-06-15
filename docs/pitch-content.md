@@ -1,4 +1,4 @@
-# Parallax — Pitch Deck Content
+# Parallax — Pitch Deck Content (10 Co-Pilots Edition)
 
 > **Slide-by-slide content for the 12-slide pitch deck**
 > **Team Parallax · IndiaRuns Hackathon 2026 · Challenge 1: AI Systems Architect**
@@ -10,10 +10,11 @@
 **Title**: ⬡ Parallax
 **Subtitle**: AI Co-Pilots That See Work From Every Angle
 **Details**: Team Parallax · IndiaRuns Hackathon 2026 · Challenge 1: AI Systems Architect — Reimagining Work
+**Badges**: 10 Autonomous Co-Pilots · Multi-Agent Orchestration · Adaptive Memory
 
-**Visual**: Dark premium background. "Parallax" in bold modern typography. Subtle geometric pattern showing multiple perspectives converging. Five small co-pilot icons (🔍📊✍️⚡🛡️) in a ring.
+**Visual**: Dark premium background. Parallax logo (hexagon with 10 glowing nodes). Clean modern typography.
 
-**Speaker notes**: "We're Team Parallax. We built a system of AI co-pilots that don't just chat with you — they actually work alongside you. Let me show you why this changes everything."
+**Speaker notes**: "We're Team Parallax. We designed a system of 10 AI co-pilots that don't just chat with you — they actually work alongside you. Let us show you why this changes everything."
 
 ---
 
@@ -23,28 +24,23 @@
 
 **Content**:
 ```
-The current AI experience:
+Today's AI experience:
 
-You: "Research competitors"     → AI answers
-You: "Now analyze the data"    → AI answers  
-You: "Now write a report"      → AI answers
-You: "Now email it"            → AI: "I can't do that"
-You: "Now schedule a follow-up" → AI: "I can't do that either"
+You: "Research competitors"       → AI answers
+You: "Now analyze the data"       → AI answers
+You: "Now write a report"         → AI answers
+You: "Now design a chart"         → AI: "I can't do that"
+You: "Now check compliance"       → AI: "I can't do that"
+You: "Now email it to the team"   → AI: "I can't do that either"
 
 YOU are still the project manager. AI does tasks. YOU do the work.
 ```
 
-**Stats:**
-- 📊 **11+ tools** juggled daily per worker
-- 🔄 **400+ context switches** per day
-- ⏰ **62%** of workday = coordination, searching, status-chasing — not real work
-- 🔍 **9.3 hours/week** just searching for information
+**Stats**: 11+ tools daily · 400+ context switches · 62% workday wasted · 9.3 hrs/week just searching
 
-**The gap**: AI tools are powerful task-completers. But knowledge work isn't tasks — it's **workflows**. Nobody has built AI that handles the full workflow.
+**Visual**: Split screen — chaos (person juggling 11 app icons) vs calm (Parallax dashboard with 10 co-pilots working).
 
-**Visual**: Split screen. LEFT: person drowning in app icons, arrows showing manual coordination between tools. RIGHT: clean Parallax dashboard with co-pilots working together. The contrast should be dramatic.
-
-**Speaker notes**: "Here's the honest truth about AI at work today. ChatGPT is brilliant — at answering questions. But real work isn't a question. It's: research this, then analyze it, then write a report, then check the numbers, then email it to the board, then schedule the follow-up. You're still the project manager who stitches all of this together. 62% of your day is spent on this coordination — not on the actual thinking. We need AI that doesn't just answer — it works."
+**Speaker notes**: "Here's the honest truth about AI at work. ChatGPT is brilliant — at answering questions. But your real work isn't a question. It's research, then analysis, then writing, then design, then compliance check, then execution, then follow-up. You're still the project manager stitching it all together. 62% of your day is spent on this coordination. We need AI that doesn't just answer — it works."
 
 ---
 
@@ -53,67 +49,66 @@ YOU are still the project manager. AI does tasks. YOU do the work.
 **Key message**: *"LLMs gave us language. Tool-use gave us hands. Agent frameworks gave us teamwork. Now we build co-pilots."*
 
 **Content**:
-
-The AI evolution:
 ```
-2020  │  LLMs understand language ──────────── Foundation
-2022  │  Tool-use / function calling ────────── AI can take actions  
-2024  │  Agent frameworks mature ─────────────── Multi-agent orchestration
-2026  │  ★ CO-PILOT ERA ★ ──────────────────── AI that actually works
-         ▲ WE ARE HERE
+2020  │  LLMs understand language
+2022  │  Tool-use / function calling  
+2024  │  Agent frameworks mature
+2026  │  ★ CO-PILOT ERA ★ ← WE ARE HERE
 ```
 
-**India opportunity:**
-- 🇮🇳 **100M+** knowledge workers — world's largest young tech workforce
-- 💰 **$15B** enterprise SaaS market by 2027
-- 🚀 Fastest AI adoption rate in Asia-Pacific
-- 🏢 Every company is asking: "How do we make our teams 2x productive with AI?"
+India: 100M+ knowledge workers · $15B SaaS market · Fastest AI adoption in Asia-Pacific
 
-**Visual**: Timeline arrow showing the evolution. Below: India map with glowing tech-hub dots and stat callouts.
+**Visual**: Timeline arrow. Below: India map with glowing tech-hub dots.
 
-**Speaker notes**: "The timing is everything. LLMs gave us language understanding. Function calling gave AI the ability to take actions. And now, agent orchestration frameworks have matured to the point where we can coordinate multiple AI agents working together reliably. We're at the inflection point — the co-pilot era. And India, with 100 million knowledge workers and the world's fastest-growing SaaS market, is the perfect place to launch this."
+**Speaker notes**: "The timing is critical. LLMs gave us language understanding. Function calling gave AI hands. Agent frameworks gave us multi-agent coordination. We're at the inflection point — the co-pilot era. And India, with 100 million knowledge workers, is the perfect launch market."
 
 ---
 
-## Slide 4: Our Solution — Meet the Co-Pilots
+## Slide 4: Meet the 10 Co-Pilots ⭐ KEY SLIDE
 
-**Key message**: *"Not one AI. Five specialized co-pilots that work as a team."*
+**Key message**: *"Not one AI. Ten specialized co-pilots that work as a team."*
 
-**Content**:
+**Content**: Show ALL 10 co-pilots in a visual ring/grid:
 
-> **Parallax**: A system of autonomous AI co-pilots that handle complex workflows from intent to execution.
+**THE CORE FIVE (Where Work Gets Done)**:
+| # | Co-Pilot | Codename | What Changes |
+|---|---|---|---|
+| 1 | 🔍 Research | The Investigator | 4-6 hrs research → 8 min |
+| 2 | 📊 Analyst | The Pattern Finder | 2-3 days analysis → 10 min |
+| 3 | ✍️ Creator | The Wordsmith | 6 hrs drafting → 12 min |
+| 4 | ⚡ Action | The Executor | Actually sends, schedules, creates |
+| 5 | 🛡️ Quality | The Guardian | Auto-catches errors before anyone sees |
 
-| Co-Pilot | Name | What It Does |
-|---|---|---|
-| 🔍 **Research Co-Pilot** | "The Investigator" | Finds, verifies, synthesizes information from any source |
-| 📊 **Analyst Co-Pilot** | "The Pattern Finder" | Crunches data, spots patterns, creates visualizations |
-| ✍️ **Creator Co-Pilot** | "The Wordsmith" | Generates audience-aware content — docs, emails, decks |
-| ⚡ **Action Co-Pilot** | "The Executor" | Takes real-world actions — emails, tickets, scheduling |
-| 🛡️ **Quality Co-Pilot** | "The Guardian" | Reviews everything for accuracy, bias, completeness |
+**THE EXTENDED FIVE (Where Work Gets Supercharged)**:
+| # | Co-Pilot | Codename | What Changes |
+|---|---|---|---|
+| 6 | 💬 Communication | The Connector | Meeting prep & follow-ups automated |
+| 7 | 💻 Code | The Engineer | Full-context code gen, review, debug |
+| 8 | 📡 Data | The Sensor | Live data from databases/APIs/dashboards |
+| 9 | 🎨 Design | The Architect | Wireframes, slides, diagrams — instant |
+| 10 | 🔐 Compliance | The Sentinel | Regulatory/legal/policy auto-checks |
 
-**The "Parallax" insight**: Each co-pilot sees your task from a different angle. Together, they reveal depth that no single AI can provide.
+**Visual**: Use the `copilot-fleet.png` — 10 co-pilots in a ring with "YOUR TASK" at center. Each with its unique color.
 
-**Visual**: Five co-pilot icons in a pentagon formation with connecting lines. Center: your task. Each co-pilot labeled with its name and one-line role. Clean, premium design.
-
-**Speaker notes**: "Parallax isn't one AI — it's five specialized co-pilots that work as a team. The Research Co-Pilot investigates. The Analyst finds patterns. The Creator writes. The Action Co-Pilot executes — actually sends emails, creates tickets. And the Quality Co-Pilot reviews everything before it reaches you. Each one sees your task from a different angle — that's the parallax effect. Together, they give you depth no single AI can match."
+**Speaker notes**: "Parallax isn't one AI — it's ten specialized co-pilots that work as a team. The core five handle the work itself: research, analysis, creation, execution, and quality assurance. The extended five supercharge it: communication handles meetings and follow-ups, code handles engineering, data pulls from live systems, design creates visuals, and compliance ensures everything is policy-compliant. Each co-pilot sees your task from a different angle — that's the parallax effect. Together, they give you depth no single AI can match."
 
 ---
 
 ## Slide 5: Architecture — How It All Connects
 
-**Key message**: *"Six clean layers. Purpose-built co-pilots. Shared memory. Enterprise-ready."*
+**Key message**: *"Six layers. Ten co-pilots. Shared memory. Enterprise-ready."*
 
-**Content**: The full architecture diagram:
-1. **Interface Layer** — Chat + Dashboard + Slack bot + API
-2. **Orchestrator** — Understands intent → Decomposes tasks → Coordinates co-pilots
-3. **Co-Pilot Pool** — 5 specialized agents with own tools and decision-making
-4. **Memory & Learning** — Episodic + Semantic + Procedural (3-layer system)
-5. **Integrations** — Slack, Notion, JIRA, GitHub, Gmail, Calendar, Drive
-6. **Infrastructure** — Auth, logging, rate limits, cost tracking
+**Content**: The 6-layer architecture:
+1. **Interface** — Chat + Dashboard + Slack bot + API
+2. **Orchestrator** — Intent Parser → Task Decomposer → DAG Scheduler → Co-Pilot Router
+3. **Co-Pilot Fleet (10)** — Research, Analyst, Creator, Action, Quality, Comms, Code, Data, Design, Compliance
+4. **Memory & Learning** — Episodic (Redis) + Semantic (Neo4j) + Procedural (Vector DB)
+5. **Integrations** — Slack, JIRA, GitHub, Gmail, Calendar, Notion, databases
+6. **Infrastructure** — Auth, audit logging, rate limits, cost tracking
 
-**Visual**: Clean layered architecture diagram with color-coding per layer. Dark background, neon accent colors. The co-pilot layer should be the most prominent.
+**Visual**: Use `architecture-diagram.png`. Clean layered diagram with color-coded layers.
 
-**Speaker notes**: "The architecture is six clean layers. At the top: you speak naturally. The orchestrator decomposes your request into a task graph — a DAG with dependencies and parallelism. It routes tasks to the right co-pilot. Below the co-pilots: a three-layer memory system that makes Parallax get smarter over time. And at the bottom: integrations with the tools you already use. Everything is modular and swappable — no vendor lock-in."
+**Speaker notes**: "Six clean layers. You speak naturally at the top. The orchestrator decomposes your request into a task graph — a DAG with dependencies and parallelism. It routes to the right co-pilots from our fleet of 10. Below: a three-layer memory system that makes Parallax smarter over time. And at the bottom: integrations with every tool you already use. Modular, swappable, no lock-in."
 
 ---
 
@@ -121,174 +116,147 @@ The AI evolution:
 
 **Key message**: *"ASK → PLAN → WATCH → GUIDE → REVIEW → LEARN. Then it gets better."*
 
-**Content**: Walk through with the competitive analysis example:
+**Content**:
 
 | Step | What Happens | You Do |
 |---|---|---|
-| **1. ASK** | "Prepare a competitive analysis for our board meeting Tuesday" | Type one sentence |
-| **2. PLAN** | Parallax shows: 8 tasks, 3 co-pilots, estimated 25 min | Approve the plan |
-| **3. WATCH** | Co-pilots work in parallel. Live progress dashboard. | Watch (or go do something else) |
-| **4. GUIDE** | "Found conflicting market data. Which source should I use?" | Make one decision |
-| **5. REVIEW** | 14-page doc + 3 charts + exec summary delivered. Quality-checked. | Review and approve |
-| **6. LEARN** | "Make exec summaries shorter next time" → stored permanently | Give quick feedback |
+| **ASK** | Type one sentence | Describe what you need |
+| **PLAN** | Parallax shows task graph + co-pilots assigned | Approve the plan |
+| **WATCH** | Co-pilots work in parallel — live progress | Watch (or go get coffee) |
+| **GUIDE** | Co-pilot escalates: "Need your decision on X" | Make one decision |
+| **REVIEW** | Quality-checked deliverable presented | Review and approve |
+| **LEARN** | "Make summaries shorter next time" → stored | Give quick feedback |
 
-**Visual**: Horizontal flow diagram with 6 connected steps. Below: mini dashboard mockup showing the WATCH step with progress bars per co-pilot.
+**Visual**: Use `user-journey-flow.png`. Horizontal flow with 6 connected steps + mini dashboard mockup showing WATCH step.
 
-**Speaker notes**: "Here's the experience. You ASK in one sentence. Parallax shows you the PLAN — you see exactly which co-pilots will work on what. You approve, and co-pilots start working in PARALLEL — you can watch live or go get coffee. When a co-pilot needs your judgment, it GUIDEs you with a clear question and recommendation. The Quality Co-Pilot REVIEWs everything. And your feedback makes Parallax LEARN. Next time, it's even better."
+**Speaker notes**: "Six steps. You ASK in one sentence. Parallax shows the PLAN — which co-pilots handle what. You approve, and they start WORKing in parallel — you can watch live or go get coffee. When a co-pilot needs judgment, it GUIDEs you with a clear question and recommendation. Quality Co-Pilot REVIEWs everything. Your feedback makes it LEARN. Next time, even better."
 
 ---
 
-## Slide 7: The Breakthrough — Why This Actually Works
+## Slide 7: The Three Breakthroughs
 
-**Key message**: *"Three innovations that make Parallax more than 'agents with different prompts.'"*
+**Key message**: *"DAG decomposition + 3-layer memory + confidence-based trust. This is why it works."*
 
 **Content**:
 
-### Innovation 1: Task Decomposition as a DAG
-Not a to-do list. A full **directed acyclic graph** with dependencies, parallelism, and dynamic re-planning. If a co-pilot discovers something unexpected, the system re-plans in real-time.
+**1. Task Decomposition as a DAG** — Not a to-do list. A full directed acyclic graph with dependencies, parallelism, dynamic re-planning. Co-pilots work in parallel where possible.
 
-### Innovation 2: Three-Layer Memory
-```
-📌 Episodic   → What's happening RIGHT NOW (task state, progress)
-🧠 Semantic   → What we KNOW (knowledge graph across all sessions)  
-🔄 Procedural → What we've LEARNED (your preferences, quality patterns)
-```
-This is why Parallax gets smarter — it doesn't just process, it **remembers and adapts**.
+**2. Three-Layer Memory** — Why Parallax gets smarter:
+- 📌 Episodic → What's happening NOW
+- 🧠 Semantic → What we KNOW (knowledge graph)
+- 🔄 Procedural → What we've LEARNED (your preferences via RLHF)
 
-### Innovation 3: Confidence-Based Autonomy
-```
-> 90% confident → Does it automatically, tells you after
-70-90%          → Does it, holds for your approval
-< 70%           → Stops, asks you to decide
-```
-Co-pilots **earn trust progressively** — like a new team member becoming a trusted colleague.
+**3. Confidence-Based Trust** — Co-pilots earn autonomy:
+- >90% → Auto-execute, tell you after
+- 70-90% → Do it, hold for approval
+- <70% → Stop, ask you to decide
 
-**Visual**: Three visual blocks, each showing one innovation with a mini-diagram. The memory pyramid should be the visual centerpiece.
+**Visual**: Three visual blocks. Memory pyramid as centerpiece. Use `memory-system.png`.
 
-**Speaker notes**: "Let me show you three innovations that make this work — not just as a demo but as a real system. First: task decomposition as a full dependency graph, not a flat list. Co-pilots work in parallel where possible. Second: three-layer memory. This is the breakthrough — Parallax remembers what you like, how you work, and what you've taught it. After a month, it knows your preferences cold. Third: confidence-based autonomy. Co-pilots start cautious and earn your trust. High confidence? They just do it. Low confidence? They ask you first. This is how you go from 'tool I babysit' to 'co-pilot I trust.'"
+**Speaker notes**: "Three innovations make this work beyond a demo. First: task decomposition as a full dependency graph — co-pilots work in parallel. Second: three-layer memory — episodic for now, semantic for knowledge, procedural for preferences. After a month, Parallax knows your style cold. Third: confidence-based trust. Co-pilots start cautious and earn autonomy — like a new team member becoming a trusted colleague."
 
 ---
 
-## Slide 8: Live Example — From Ask to Done
+## Slide 8: Live Demo ⭐ KILLER SLIDE
 
-**Key message**: *"One sentence in. Board-ready competitive analysis out. 25 minutes."*
+**Key message**: *"Other teams have slides. We have a working prototype."*
 
-**Content**: The competitive analysis walkthrough (abbreviated):
+**Content**:
+- Screenshot of the Streamlit prototype showing the dashboard
+- QR code / link to the live demo
+- Walk through ONE scenario: "Competitive analysis for board meeting"
+  - Input: 1 sentence
+  - Output: 14-page doc, 3 charts, executive summary — in 25 minutes
+  - Manually: 3-4 days
 
-```
-📝 INPUT (one sentence):
-"Prepare a competitive analysis of AI recruiting tools in 
- India for our board meeting Tuesday"
+**Visual**: Full-screen dashboard screenshot from prototype. QR code to Streamlit Cloud URL.
 
-⚡ WHAT PARALLAX DID:
-├── 🔍 Research Co-Pilot found 14 competitors + 3 market reports (8 min)
-├── 📊 Analyst Co-Pilot built SWOT, feature matrix, market map (7 min)
-├── 💬 ESCALATED: "Conflicting market data — user chose IMARC source"
-├── ✍️ Creator Co-Pilot drafted 14-page strategy doc + visuals (8 min)
-└── 🛡️ Quality Co-Pilot flagged: "Verify Competitor X pricing — data from March"
-
-📦 OUTPUT (25 minutes later):
-├── Strategy_Document.pdf (14 pages, board-formatted)
-├── Executive_Summary.pdf (1 page, 4 bullet points)
-├── 3 embedded charts (market map, feature matrix, growth projection)
-└── Quality warning about data recency
-
-⏱️ Without Parallax: 3-4 days of manual work
-⏱️ With Parallax: 25 minutes + 1 decision
-```
-
-**Visual**: A "before/after" comparison. LEFT: messy 4-day manual process with arrows. RIGHT: clean 25-minute Parallax flow. Time savings highlighted dramatically.
-
-**Speaker notes**: "Let's see this in action. A PM types one sentence. Parallax decomposes it into 8 tasks. Three co-pilots start working in parallel. The Research Co-Pilot finds 14 competitors. The Analyst builds a SWOT and feature matrix. When it finds conflicting market data, it doesn't guess — it asks you, with a recommendation. The Creator drafts a board-ready document. The Quality Co-Pilot flags a recency issue. 25 minutes later: a 14-page strategy doc, executive summary, and three charts. This took 3-4 days before. Now it takes less time than a coffee break."
+**Speaker notes**: "Let me show you Parallax in action. Instead of slides, I'll show you the prototype. [Open browser / show screenshot] A PM types one sentence. Parallax decomposes it into 9 tasks across 5 co-pilots. Research finds 14 competitors. Data pulls live market metrics. Analyst builds SWOT and feature matrix. When conflicting data appears, it doesn't guess — it asks you. Creator drafts a board-ready document. Design creates charts. Compliance adds disclaimers. Quality fact-checks everything. 25 minutes. This took 3-4 days before."
 
 ---
 
 ## Slide 9: Why Parallax Wins
 
-**Key message**: *"No one else combines autonomous co-pilots + persistent memory + quality assurance."*
+**Key message**: *"No one else combines 10 specialized co-pilots + persistent memory + built-in quality + compliance."*
 
 **Content**:
 
 | | ChatGPT | Copilot | MS Copilot | **Parallax** |
 |---|---|---|---|---|
-| Multi-step workflows | ❌ | ❌ | ⚠️ | ✅ |
-| Specialized co-pilots | ❌ | ❌ | ❌ | ✅ 5 purpose-built |
+| Multi-step workflows | ❌ | ❌ | ⚠️ | ✅ Full DAGs |
+| Specialized co-pilots | ❌ | ❌ | ❌ | ✅ **10 purpose-built** |
 | Persistent memory | ❌ | ❌ | ⚠️ | ✅ 3-layer |
-| Real-world actions | ❌ | ❌ | ⚠️ M365 | ✅ Any API |
-| Autonomous execution | ❌ | ❌ | ❌ | ✅ Trust-based |
-| Self-quality-check | ❌ | ❌ | ❌ | ✅ Built-in |
+| Real-world actions | ❌ | ❌ | ⚠️ | ✅ Any API |
+| Visual design | ❌ | ❌ | ❌ | ✅ Design co-pilot |
+| Compliance | ❌ | ❌ | ❌ | ✅ Built-in |
+| Live data access | ❌ | ❌ | ⚠️ | ✅ Any DB/API |
 | Learns over time | ❌ | ❌ | ❌ | ✅ RLHF |
 
-**Visual**: Feature comparison matrix. Parallax column highlighted in green. Competitors in grey/red.
+**Visual**: Comparison matrix. Parallax column highlighted in green/cyan.
 
-**Speaker notes**: "Here's why nobody else is doing this. ChatGPT is single-turn. Copilot is code-only. Microsoft Copilot is locked to Office. Parallax is the only system that combines autonomous multi-step workflows, five specialized co-pilots, three-layer persistent memory, real-world actions with safety, and a built-in quality gate. And it learns — every interaction makes it smarter for YOUR specific way of working."
+**Speaker notes**: "Here's the competitive landscape. ChatGPT: single-turn, no actions. GitHub Copilot: code only. Microsoft Copilot: locked to Office. Parallax is the only system with 10 specialized co-pilots, three-layer persistent memory, real-world execution, design generation, compliance checks, and continuous learning. Nobody else does all of these together."
 
 ---
 
 ## Slide 10: Market & Impact
 
-**Key message**: *"100M Indian knowledge workers × 2 hours saved/day = a revolution."*
+**Key message**: *"100M knowledge workers × 2 hrs saved/day = ₹3,000 Cr annual impact at 1% adoption."*
 
 **Content**:
+- 🇮🇳 India knowledge workforce: **~100M**
+- ⏰ Time saved: **~2 hrs/day** per worker
+- 💰 Productivity value: **~₹3L/year** per worker
+- 📈 At 1% adoption: **₹3,000 Cr** annual productivity unlocked
+- 🌍 Global market: **$102B** by 2027
+- 🇮🇳 India SaaS: **$15B** by 2027
 
-**The numbers:**
-- 🇮🇳 India's knowledge workforce: **~100 million**
-- ⏰ Time saved per worker: **~2 hours/day** (reducing "work about work" from 62% → ~35%)
-- 💰 Productivity value per worker: **~₹3L/year** (based on avg ₹12-15 LPA salary)
-- 🌍 Global productivity software market: **$102B** by 2027
-- 📈 India enterprise SaaS: **$15B** by 2027
+**Pricing**: Free (5 tasks/day) → Pro ₹2K/mo → Enterprise custom
 
-**Pricing model:**
-- 🆓 Free: 5 tasks/day
-- 💎 Pro: ₹2,000/month per user
-- 🏢 Enterprise: Custom + on-premise
+**Visual**: Big stat callouts. Market funnel TAM → SAM → SOM. India map.
 
-**If just 1% of India's knowledge workers adopt:**
-1M users × ₹3L productivity saved = **₹3,000 Cr annual impact**
-
-**Visual**: Big bold stat callouts: "100M workers", "2 hrs/day saved", "₹3,000 Cr impact". Market funnel TAM → SAM → SOM. India map with tech hub highlights.
-
-**Speaker notes**: "India has over 100 million knowledge workers. They lose 62% of their day to coordination. If Parallax saves just 2 hours per day — and our architecture makes that realistic — that's 3 lakh rupees per worker per year in productivity. At just 1% adoption: a million users, 3,000 crore in productivity unlocked. The market is enormous, and India is the perfect launch market — young, tech-forward, and hungry for productivity tools."
+**Speaker notes**: "100 million knowledge workers in India lose 62% of their day to coordination. Parallax saves 2 hours per day — that's 3 lakh rupees per worker per year. At just 1% adoption: 3,000 crore in annual productivity. The global market is $102 billion. India alone is $15 billion by 2027."
 
 ---
 
 ## Slide 11: Roadmap
 
-**Key message**: *"Phase 1: Co-pilot foundation. Phase 2: Co-pilot marketplace. Phase 3: Self-improving intelligence."*
+**Key message**: *"Phase 1: Foundation. Phase 2: Co-Pilot Marketplace. Phase 3: Self-Improving Intelligence."*
 
 **Content**:
 ```
-PHASE 1 (0-3 mo)            PHASE 2 (3-6 mo)             PHASE 3 (6-12 mo)
-──────────────────           ──────────────────           ──────────────────
-✅ Core Orchestrator          🔧 Co-Pilot Marketplace      🚀 Self-improving RLHF
-✅ 5 Base Co-Pilots           🔧 Custom co-pilot builder   🚀 Industry co-pilot packs
-✅ 3-Layer Memory             🔧 Enterprise SSO/RBAC       🚀 Multi-user collaboration
-✅ 5 integrations             🔧 15+ integrations          🚀 On-premise deployment
-✅ Single-user beta           🔧 Team workspaces           🚀 Voice + mobile
+Phase 1 (0-3 mo)            Phase 2 (3-6 mo)            Phase 3 (6-12 mo)
+───────────────             ───────────────             ───────────────
+✅ Core Orchestrator          🔧 Co-Pilot Marketplace     🚀 Self-improving RLHF  
+✅ 10 Base Co-Pilots          🔧 Custom co-pilot builder  🚀 Industry packs
+✅ 3-Layer Memory             🔧 Enterprise SSO/RBAC      🚀 Multi-user collab
+✅ 8 integrations             🔧 20+ integrations         🚀 On-premise deploy
+✅ Single-user beta           🔧 SOC-2 compliance         🚀 Voice + mobile
 ```
 
-**Network effect**: Phase 2 introduces a **co-pilot marketplace** — users can create, share, and discover custom co-pilots. This is how Parallax gets network effects: every new co-pilot makes the platform more valuable for everyone.
+**Network effect**: Phase 2 Co-Pilot Marketplace = users create, share, and discover custom co-pilots. This is how Parallax gets network effects.
 
-**Visual**: Horizontal roadmap with 3 phases. Phase 1 = "Foundation" (green, done). Phase 2 = "Expansion" (yellow, building). Phase 3 = "Intelligence" (blue, planned).
+**Visual**: Horizontal 3-phase timeline.
+
+**Speaker notes**: "Phase 1: core orchestrator, 10 base co-pilots, three-layer memory — the foundation. Phase 2: we open a co-pilot marketplace where users create and share custom co-pilots — this gives us network effects. Phase 3: self-improving intelligence through RLHF, industry-specific co-pilot packs, and enterprise deployment."
 
 ---
 
 ## Slide 12: Team & Close
 
-**Key message**: *"We don't just pitch co-pilots — we build them."*
+**Key message**: *"The future of work isn't smarter chatbots. It's a team of AI co-pilots."*
 
 **Content**:
 - **Team**: Parallax
-- **Background**: ML/Data Science, Systems Architecture
+- **System**: Parallax — AI Co-Pilots That See Work From Every Angle
 - **GitHub**: https://github.com/FrozenLionMax/Parallax
+- **Demo**: [Streamlit Cloud link]
 
 **Closing line**:
+> *"The future of work isn't about asking AI better questions. It's about AI co-pilots that see your work from every angle, handle the complexity, earn your trust, and get smarter every day. That's Parallax."*
 
-> *"The future of work isn't a smarter chatbot. It's a team of AI co-pilots that see your work from every angle, handle the complexity, earn your trust, and get better every day. That's Parallax."*
+**Visual**: Team info. Closing tagline in large typography. QR codes to GitHub and demo.
 
-**Visual**: Clean team slide. Large closing tagline. GitHub QR code. Parallax logo.
-
-**Speaker notes**: "We're Team Parallax. We believe the future of work isn't about asking AI better questions — it's about AI co-pilots that work alongside you. Co-pilots that see your task from every angle. Co-pilots that handle complexity autonomously but know when to ask for help. Co-pilots that learn and get better with every interaction. That's what we've designed. That's Parallax. Thank you."
+**Speaker notes**: "We're Team Parallax. We believe the next paradigm isn't better chatbots — it's co-pilots that work alongside you. Ten perspectives. One task. Depth no single AI can match. That's Parallax. Thank you."
 
 ---
 
