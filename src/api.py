@@ -341,6 +341,6 @@ async def get_cost(graph_id: str):
 @app.on_event("startup")
 async def startup():
     """Warm up the system on startup."""
-    print(f"\n  ⬡ {APP_NAME} API v{VERSION}")
+    print(f"\n  {APP_NAME} API v{VERSION}")
     print(f"  {TAGLINE}")
     print(f"  {len(orchestrator.copilots)} co-pilots ready\n")
