@@ -5,7 +5,7 @@
 <p align="center"><strong>AI Co-Pilots That See Work From Every Angle</strong></p>
 
 <p align="center">
-  <code>10 Autonomous Co-Pilots</code> · <code>Multi-Agent Orchestration</code> · <code>Adaptive Memory</code> · <code>Confidence-Based Trust</code>
+  <code>11 Autonomous Co-Pilots</code> · <code>Multi-Agent Orchestration</code> · <code>Adaptive Memory</code> · <code>Confidence-Based Trust</code>
 </p>
 
 <p align="center">
@@ -51,17 +51,17 @@ YOU are still the project manager. AI does tasks. YOU do the work.
 
 ## 💡 The Solution: Parallax
 
-**Parallax** is a system of **10 autonomous AI co-pilots** — each one purpose-built for a different dimension of knowledge work. Together, they handle complex workflows from intent to execution to follow-up.
+**Parallax** is a system of **11 autonomous AI co-pilots** — each one purpose-built for a different dimension of knowledge work. Together, they handle complex workflows from intent to execution to follow-up.
 
 ### Why "Parallax"?
 
 In optics, **parallax** is the shift in perspective when you view something from different angles — revealing depth that a single viewpoint misses.
 
-That's exactly what our 10 co-pilots do. One task. **Ten perspectives**. Depth and capability that no single AI can provide.
+That's exactly what our 11 co-pilots do. One task. **Eleven perspectives**. Depth and capability that no single AI can provide.
 
 ---
 
-## 🤖 The 10 AI Co-Pilots
+## 🤖 The 11 AI Co-Pilots
 
 ### The Core Five — Where Work Gets Done
 
@@ -247,9 +247,29 @@ Same insight, three audiences:
 
 ---
 
-## 🧠 The Orchestrator — How 10 Co-Pilots Work Together
+### The Performance Layer
 
-The co-pilots don't work in isolation — they're coordinated by a central **Orchestrator** that acts as the project manager:
+---
+
+#### ⚙️ Catalyst Co-Pilot — *"The Accelerator"*
+
+**What it does**: Makes the other 10 co-pilots faster. Pre-fetches data, caches results, optimizes execution, and handles overflow.
+
+| Capability | How It Changes Work |
+|---|---|
+| Data pre-fetching | Anticipates what co-pilots will need and fetches it early |
+| Result caching | Stores intermediate results so co-pilots don't repeat work |
+| Payload compression | Summarizes large data for faster inter-co-pilot transfer |
+| DAG optimization | Finds tasks that can run in parallel and optimizes the plan |
+| Overflow handling | Takes on simple tasks when specialist co-pilots are busy |
+
+⏱️ **Impact**: Reduces end-to-end task completion time by **~40%** through intelligent caching and parallel execution.
+
+---
+
+## 🧠 The Orchestrator — How 11 Co-Pilots Work Together
+
+The co-pilots don't work in isolation — they're coordinated by a central **Orchestrator** that acts as the project manager, with the Catalyst Co-Pilot optimizing the entire pipeline:
 
 ```
 ┌─────────────────────────────────────────────────────────────────────┐
@@ -261,14 +281,14 @@ The co-pilots don't work in isolation — they're coordinated by a central **Orc
 │                    🧠 ORCHESTRATOR                                  │
 │      Understand Intent → Decompose Tasks → Coordinate Co-Pilots     │
 └───┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────────┘
-    │     │     │     │     │     │     │     │     │     │
-  ┌─▼─┐ ┌─▼─┐ ┌─▼─┐ ┌─▼─┐ ┌─▼─┐ ┌─▼─┐ ┌─▼─┐ ┌─▼─┐ ┌─▼─┐ ┌─▼─┐
-  │🔍 │ │📊 │ │✍️ │ │⚡ │ │🛡️ │ │💬 │ │💻 │ │📡 │ │🎨 │ │🔐 │
-  │INV│ │PAT│ │WOR│ │EXE│ │GUA│ │CON│ │ENG│ │SEN│ │ARC│ │SNT│
-  └───┘ └───┘ └───┘ └───┘ └───┘ └───┘ └───┘ └───┘ └───┘ └───┘
+    │     │     │     │     │     │     │     │     │     │     │
+  ┌─▼─┐ ┌─▼─┐ ┌─▼─┐ ┌─▼─┐ ┌─▼─┐ ┌─▼─┐ ┌─▼─┐ ┌─▼─┐ ┌─▼─┐ ┌─▼─┐ ┌─▼─┐
+  │🔍 │ │📊 │ │✍️ │ │⚡ │ │🛡️ │ │💬 │ │💻 │ │📡 │ │🎨 │ │🔐 │ │⚙️ │
+  │INV│ │PAT│ │WOR│ │EXE│ │GUA│ │CON│ │ENG│ │SEN│ │ARC│ │SNT│ │CAT│
+  └───┘ └───┘ └───┘ └───┘ └───┘ └───┘ └───┘ └───┘ └───┘ └───┘ └───┘
 ```
 
-**The Orchestrator decides which co-pilots to activate per task.** A competitive analysis might use Research + Data + Analyst + Creator + Design + Quality. A sprint retro might use Data + Analyst + Communication + Creator + Quality. Not every task uses all 10.
+**The Orchestrator decides which co-pilots to activate per task.** A competitive analysis might use Research + Data + Analyst + Creator + Design + Quality + Catalyst. A sprint retro might use Data + Analyst + Communication + Creator + Quality. Not every task uses all 11.
 
 ### How co-pilots communicate:
 
@@ -347,9 +367,10 @@ Co-Pilot STUCK     →  Full escalation with context.
 │    Intent Parser → Task Decomposer → DAG Scheduler → Co-Pilot      │
 │                                                        Router      │
 ├─────────────────────────────────────────────────────────────────────┤
-│                    LAYER 3: AI CO-PILOT FLEET (10)                  │
+│                    LAYER 3: AI CO-PILOT FLEET (11)                  │
 │  🔍 Research │📊 Analyst │✍️ Creator │⚡ Action │🛡️ Quality        │
 │  💬 Comms    │💻 Code    │📡 Data    │🎨 Design │🔐 Compliance     │
+│  ⚙️ Catalyst (The Accelerator — optimizes the entire pipeline)      │
 ├─────────────────────────────────────────────────────────────────────┤
 │                    LAYER 4: MEMORY & LEARNING                      │
 │    📌 Episodic     │  🧠 Semantic       │  🔄 Procedural           │
@@ -388,7 +409,7 @@ Week 8:  Parallax auto-produces summaries in YOUR format, uses YOUR
 | | ChatGPT | Copilot | MS Copilot | **Parallax** |
 |---|---|---|---|---|
 | Multi-step workflows | ❌ | ❌ | ⚠️ | ✅ Full DAGs |
-| Specialized co-pilots | ❌ | ❌ | ❌ | ✅ **10 purpose-built** |
+| Specialized co-pilots | ❌ | ❌ | ❌ | ✅ **11 purpose-built** |
 | Persistent memory | ❌ | ❌ | ⚠️ | ✅ 3-layer system |
 | Real-world actions | ❌ | ❌ | ⚠️ M365 | ✅ Any API |
 | Autonomous execution | ❌ | ❌ | ❌ | ✅ Trust-based |
@@ -425,7 +446,7 @@ Phase 1: Foundation            Phase 2: Expansion              Phase 3: Intellig
 (0-3 months)                   (3-6 months)                    (6-12 months)
 ────────────────────           ────────────────────            ────────────────────
 ✅ Core Orchestrator            🔧 Co-Pilot Marketplace         🚀 Self-improving RLHF
-✅ 10 Base Co-Pilots            🔧 Custom co-pilot builder      🚀 Industry co-pilot packs
+✅ 11 Base Co-Pilots            🔧 Custom co-pilot builder      🚀 Industry co-pilot packs
 ✅ 3-Layer Memory               🔧 Enterprise SSO + RBAC        🚀 Multi-user collaboration
 ✅ 8 tool integrations          🔧 20+ integrations             🚀 On-premise deployment
 ✅ Single-user beta             🔧 Team workspaces              🚀 Voice + mobile
@@ -455,6 +476,35 @@ Phase 1: Foundation            Phase 2: Expansion              Phase 3: Intellig
 | **Hackathon** | IndiaRuns Hackathon 2026 |
 | **Track** | Ideathon — Challenge 1: AI Systems Architect |
 | **GitHub** | https://github.com/FrozenLionMax/Parallax |
+
+---
+
+## 🚀 Quick Start
+
+```bash
+# Clone the repo
+git clone https://github.com/FrozenLionMax/Parallax.git
+cd Parallax
+
+# Install dependencies
+pip install -r requirements.txt
+
+# Run the interactive demo
+python main.py
+
+# Run the API server
+uvicorn src.api:app --port 8000
+# → Open http://localhost:8000/docs for Swagger UI
+
+# Run the Streamlit prototype
+streamlit run prototype/app.py
+
+# Run tests (57 tests)
+pytest tests/ -v
+
+# Run with Docker
+docker-compose up
+```
 
 ---
 
