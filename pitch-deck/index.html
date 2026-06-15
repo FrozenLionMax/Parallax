@@ -1,0 +1,683 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parallax — AI Co-Pilots That See Work From Every Angle</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        :root {
+            --bg-primary: #0A1628;
+            --bg-card: rgba(15, 29, 50, 0.7);
+            --accent-cyan: #00D4FF;
+            --accent-violet: #7B61FF;
+            --accent-green: #10B981;
+            --accent-yellow: #F59E0B;
+            --accent-red: #EF4444;
+            --accent-pink: #EC4899;
+            --accent-teal: #14B8A6;
+            --accent-orange: #F97316;
+            --text-primary: #E2E8F0;
+            --text-secondary: #94A3B8;
+            --text-dim: #475569;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background: var(--bg-primary);
+            color: var(--text-primary);
+        }
+
+        /* ─── Slide Layout ─── */
+        .slide {
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 5vh 8vw;
+            position: relative;
+            overflow: hidden;
+            page-break-after: always;
+        }
+
+        .slide::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            right: -30%;
+            width: 80%;
+            height: 200%;
+            background: radial-gradient(ellipse, rgba(123, 97, 255, 0.06) 0%, transparent 60%);
+            pointer-events: none;
+        }
+
+        .slide-number {
+            position: absolute;
+            bottom: 3vh;
+            right: 4vw;
+            font-size: 0.75rem;
+            color: var(--text-dim);
+            font-weight: 500;
+        }
+
+        .slide-footer {
+            position: absolute;
+            bottom: 3vh;
+            left: 4vw;
+            font-size: 0.7rem;
+            color: var(--text-dim);
+        }
+
+        /* ─── Typography ─── */
+        h1 { font-size: 3.5rem; font-weight: 900; line-height: 1.1; margin-bottom: 1rem; }
+        h2 { font-size: 2rem; font-weight: 800; margin-bottom: 0.5rem; }
+        h3 { font-size: 1.3rem; font-weight: 700; margin-bottom: 0.5rem; }
+        p { font-size: 1.05rem; line-height: 1.6; color: var(--text-secondary); }
+
+        .gradient-text {
+            background: linear-gradient(135deg, var(--accent-cyan), var(--accent-violet));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .subtitle { font-size: 1.4rem; font-weight: 300; color: var(--text-secondary); }
+        .big-stat { font-size: 3.5rem; font-weight: 900; }
+        .stat-label { font-size: 0.85rem; color: var(--text-dim); text-transform: uppercase; letter-spacing: 1.5px; }
+        .code { font-family: 'JetBrains Mono', monospace; font-size: 0.9rem; }
+
+        /* ─── Components ─── */
+        .badge {
+            display: inline-block;
+            padding: 4px 14px;
+            border-radius: 20px;
+            font-size: 0.7rem;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+            margin: 3px;
+        }
+
+        .badge-cyan { background: rgba(0,212,255,0.12); color: var(--accent-cyan); border: 1px solid rgba(0,212,255,0.25); }
+        .badge-violet { background: rgba(123,97,255,0.12); color: var(--accent-violet); border: 1px solid rgba(123,97,255,0.25); }
+        .badge-green { background: rgba(16,185,129,0.12); color: var(--accent-green); border: 1px solid rgba(16,185,129,0.25); }
+
+        .glass {
+            background: var(--bg-card);
+            backdrop-filter: blur(20px);
+            border: 1px solid rgba(255,255,255,0.06);
+            border-radius: 14px;
+            padding: 20px;
+        }
+
+        .card-grid {
+            display: grid;
+            gap: 12px;
+            margin-top: 1.5rem;
+        }
+
+        .card-grid-5 { grid-template-columns: repeat(5, 1fr); }
+        .card-grid-3 { grid-template-columns: repeat(3, 1fr); }
+        .card-grid-2 { grid-template-columns: repeat(2, 1fr); }
+
+        .copilot-card {
+            text-align: center;
+            padding: 16px 8px;
+            transition: border-color 0.3s;
+        }
+
+        .copilot-card .icon { font-size: 1.8rem; margin-bottom: 6px; }
+        .copilot-card .name { font-weight: 700; font-size: 0.85rem; }
+        .copilot-card .codename { font-size: 0.7rem; color: var(--text-dim); }
+
+        .step-flow {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 1.5rem 0;
+        }
+
+        .step-box {
+            flex: 1;
+            text-align: center;
+            padding: 16px 10px;
+            position: relative;
+        }
+
+        .step-box .num {
+            width: 32px; height: 32px;
+            border-radius: 50%;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 800;
+            font-size: 0.85rem;
+            margin-bottom: 6px;
+        }
+
+        .step-box .label { font-weight: 700; font-size: 0.95rem; }
+        .step-box .desc { font-size: 0.75rem; color: var(--text-dim); margin-top: 4px; }
+
+        .step-arrow {
+            width: 40px;
+            text-align: center;
+            color: var(--text-dim);
+            font-size: 1.2rem;
+        }
+
+        .compare-table {
+            width: 100%;
+            border-collapse: separate;
+            border-spacing: 0;
+            margin-top: 1rem;
+            font-size: 0.85rem;
+        }
+
+        .compare-table th {
+            padding: 10px 12px;
+            text-align: left;
+            font-weight: 600;
+            color: var(--text-dim);
+            border-bottom: 1px solid rgba(255,255,255,0.08);
+        }
+
+        .compare-table th:last-child {
+            background: rgba(0,212,255,0.06);
+            color: var(--accent-cyan);
+            border-radius: 8px 8px 0 0;
+        }
+
+        .compare-table td {
+            padding: 8px 12px;
+            border-bottom: 1px solid rgba(255,255,255,0.04);
+        }
+
+        .compare-table td:last-child {
+            background: rgba(0,212,255,0.04);
+        }
+
+        .check { color: var(--accent-green); }
+        .cross { color: var(--accent-red); opacity: 0.5; }
+        .warn { color: var(--accent-yellow); }
+
+        .timeline {
+            display: flex;
+            gap: 16px;
+            margin-top: 1.5rem;
+        }
+
+        .phase {
+            flex: 1;
+            padding: 20px;
+            border-top: 3px solid;
+        }
+
+        .phase h3 { font-size: 1rem; margin-bottom: 10px; }
+        .phase ul { list-style: none; font-size: 0.8rem; color: var(--text-secondary); }
+        .phase ul li { margin: 4px 0; }
+
+        .stat-row {
+            display: flex;
+            gap: 24px;
+            margin: 1.5rem 0;
+        }
+
+        .stat-block { flex: 1; }
+
+        .code-block {
+            background: rgba(0,0,0,0.3);
+            border-radius: 10px;
+            padding: 16px 20px;
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.82rem;
+            color: var(--text-secondary);
+            line-height: 1.6;
+            margin: 1rem 0;
+            white-space: pre;
+            overflow-x: auto;
+        }
+
+        .divider {
+            height: 1px;
+            background: linear-gradient(90deg, transparent, rgba(0,212,255,0.2), transparent);
+            margin: 1.5rem 0;
+        }
+
+        .key-message {
+            font-style: italic;
+            color: var(--accent-cyan);
+            font-size: 1rem;
+            margin-bottom: 1.5rem;
+            font-weight: 400;
+        }
+
+        @media print {
+            .slide { page-break-after: always; height: 100vh; }
+            body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+        }
+    </style>
+</head>
+<body>
+
+<!-- ═══════════ SLIDE 1: COVER ═══════════ -->
+<div class="slide" style="justify-content: center; align-items: center; text-align: center;">
+    <div style="margin-bottom: 2rem;">
+        <h1 style="font-size: 5rem;" class="gradient-text">⬡ Parallax</h1>
+        <p class="subtitle" style="font-size: 1.6rem; margin-top: 0.5rem;">AI Co-Pilots That See Work From Every Angle</p>
+    </div>
+    <div style="margin: 1.5rem 0;">
+        <span class="badge badge-cyan">10 Autonomous Co-Pilots</span>
+        <span class="badge badge-violet">Multi-Agent Orchestration</span>
+        <span class="badge badge-green">Adaptive Memory</span>
+    </div>
+    <div class="divider" style="width: 200px; margin: 2rem auto;"></div>
+    <p style="font-size: 1rem; color: var(--text-dim);">
+        Team Parallax · IndiaRuns Hackathon 2026<br>
+        Challenge 1: The AI Systems Architect — Reimagining Work
+    </p>
+    <span class="slide-number">1 / 12</span>
+</div>
+
+<!-- ═══════════ SLIDE 2: THE PROBLEM ═══════════ -->
+<div class="slide">
+    <h2>AI Can Chat.</h2>
+    <h1 class="gradient-text">But It Can't Work.</h1>
+    <p class="key-message">"We turned AI into the world's smartest intern — but we still need a team."</p>
+
+    <div class="code-block">You: "Research competitors"       → AI answers
+You: "Now analyze the data"       → AI answers
+You: "Now write a report"         → AI answers
+You: "Now design a chart"         → AI: "I can't do that"
+You: "Now check compliance"       → AI: "I can't do that"
+You: "Now email it to the team"   → AI: "I can't do that either"
+
+<span style="color: var(--accent-yellow);">YOU are still the project manager. AI does tasks. YOU do the work.</span></div>
+
+    <div class="stat-row">
+        <div class="stat-block glass" style="text-align:center;">
+            <div class="big-stat gradient-text" style="font-size:2.5rem;">11+</div>
+            <div class="stat-label">Tools daily</div>
+        </div>
+        <div class="stat-block glass" style="text-align:center;">
+            <div class="big-stat gradient-text" style="font-size:2.5rem;">400+</div>
+            <div class="stat-label">Context switches</div>
+        </div>
+        <div class="stat-block glass" style="text-align:center;">
+            <div class="big-stat gradient-text" style="font-size:2.5rem;">62%</div>
+            <div class="stat-label">Day wasted</div>
+        </div>
+        <div class="stat-block glass" style="text-align:center;">
+            <div class="big-stat gradient-text" style="font-size:2.5rem;">9.3h</div>
+            <div class="stat-label">Just searching</div>
+        </div>
+    </div>
+    <span class="slide-footer">Team Parallax · IndiaRuns 2026</span>
+    <span class="slide-number">2 / 12</span>
+</div>
+
+<!-- ═══════════ SLIDE 3: WHY NOW ═══════════ -->
+<div class="slide">
+    <h2>Why Now?</h2>
+    <h1 class="gradient-text">The Co-Pilot Moment</h1>
+    <p class="key-message">"LLMs gave us language. Tool-use gave us hands. Agent frameworks gave us teamwork."</p>
+
+    <div class="code-block" style="font-size: 1rem;">2020  │  LLMs understand language ──────────── Foundation
+2022  │  Tool-use / function calling ────────── AI can act
+2024  │  Agent frameworks mature ─────────────── Orchestration
+2026  │  <span style="color: var(--accent-cyan); font-weight: bold;">★ CO-PILOT ERA ★</span> ──────────────────── <span style="color: var(--accent-yellow);">WE ARE HERE</span></div>
+
+    <div class="card-grid card-grid-3" style="margin-top: 1rem;">
+        <div class="glass" style="text-align:center;">
+            <div class="big-stat gradient-text" style="font-size:2.2rem;">100M+</div>
+            <div class="stat-label">Indian knowledge workers</div>
+        </div>
+        <div class="glass" style="text-align:center;">
+            <div class="big-stat gradient-text" style="font-size:2.2rem;">$15B</div>
+            <div class="stat-label">India SaaS by 2027</div>
+        </div>
+        <div class="glass" style="text-align:center;">
+            <div class="big-stat gradient-text" style="font-size:2.2rem;">#1</div>
+            <div class="stat-label">Fastest AI adoption in APAC</div>
+        </div>
+    </div>
+    <span class="slide-footer">Team Parallax · IndiaRuns 2026</span>
+    <span class="slide-number">3 / 12</span>
+</div>
+
+<!-- ═══════════ SLIDE 4: MEET THE CO-PILOTS ═══════════ -->
+<div class="slide">
+    <h2>Meet the Fleet</h2>
+    <h1 class="gradient-text">10 AI Co-Pilots</h1>
+    <p class="key-message">"Not one AI. Ten specialized co-pilots that work as a team."</p>
+
+    <h3 style="color: var(--text-dim); margin-top:1rem;">The Core Five — Where Work Gets Done</h3>
+    <div class="card-grid card-grid-5">
+        <div class="glass copilot-card"><div class="icon">🔍</div><div class="name">Research</div><div class="codename">The Investigator</div></div>
+        <div class="glass copilot-card"><div class="icon">📊</div><div class="name">Analyst</div><div class="codename">The Pattern Finder</div></div>
+        <div class="glass copilot-card"><div class="icon">✍️</div><div class="name">Creator</div><div class="codename">The Wordsmith</div></div>
+        <div class="glass copilot-card"><div class="icon">⚡</div><div class="name">Action</div><div class="codename">The Executor</div></div>
+        <div class="glass copilot-card"><div class="icon">🛡️</div><div class="name">Quality</div><div class="codename">The Guardian</div></div>
+    </div>
+
+    <h3 style="color: var(--text-dim); margin-top:1rem;">The Extended Five — Where Work Gets Supercharged</h3>
+    <div class="card-grid card-grid-5">
+        <div class="glass copilot-card"><div class="icon">💬</div><div class="name">Comms</div><div class="codename">The Connector</div></div>
+        <div class="glass copilot-card"><div class="icon">💻</div><div class="name">Code</div><div class="codename">The Engineer</div></div>
+        <div class="glass copilot-card"><div class="icon">📡</div><div class="name">Data</div><div class="codename">The Sensor</div></div>
+        <div class="glass copilot-card"><div class="icon">🎨</div><div class="name">Design</div><div class="codename">The Architect</div></div>
+        <div class="glass copilot-card"><div class="icon">🔐</div><div class="name">Compliance</div><div class="codename">The Sentinel</div></div>
+    </div>
+
+    <p style="text-align: center; margin-top:1rem; font-size:0.9rem;">Each co-pilot sees your task from a <strong style="color: var(--accent-cyan);">different angle</strong>. Together, they reveal depth no single AI can provide.</p>
+    <span class="slide-footer">Team Parallax · IndiaRuns 2026</span>
+    <span class="slide-number">4 / 12</span>
+</div>
+
+<!-- ═══════════ SLIDE 5: ARCHITECTURE ═══════════ -->
+<div class="slide">
+    <h2>System Architecture</h2>
+    <h1 class="gradient-text">Six Clean Layers</h1>
+    <p class="key-message">"Ten co-pilots. Shared memory. Enterprise-ready."</p>
+
+    <div style="margin-top:1rem;">
+        <div class="glass" style="border-left: 3px solid #E2E8F0; margin: 6px 0; padding: 12px 20px;">
+            <strong>Layer 1 — Interface</strong><span style="color: var(--text-dim); margin-left: 1rem;">Chat UI · Dashboard · Slack Bot · API · CLI</span>
+        </div>
+        <div class="glass" style="border-left: 3px solid var(--accent-cyan); margin: 6px 0; padding: 12px 20px;">
+            <strong style="color: var(--accent-cyan);">Layer 2 — Orchestrator</strong><span style="color: var(--text-dim); margin-left: 1rem;">Intent Parser → Task Decomposer → DAG Scheduler → Co-Pilot Router</span>
+        </div>
+        <div class="glass" style="border-left: 3px solid var(--accent-violet); margin: 6px 0; padding: 14px 20px;">
+            <strong style="color: var(--accent-violet);">Layer 3 — Co-Pilot Fleet (10)</strong><br>
+            <span style="font-size:0.85rem; color: var(--text-secondary); margin-top: 4px; display: inline-block;">🔍 Research · 📊 Analyst · ✍️ Creator · ⚡ Action · 🛡️ Quality · 💬 Comms · 💻 Code · 📡 Data · 🎨 Design · 🔐 Compliance</span>
+        </div>
+        <div class="glass" style="border-left: 3px solid var(--accent-green); margin: 6px 0; padding: 12px 20px;">
+            <strong style="color: var(--accent-green);">Layer 4 — Memory & Learning</strong><span style="color: var(--text-dim); margin-left: 1rem;">📌 Episodic (Redis) · 🧠 Semantic (Neo4j) · 🔄 Procedural (Vector DB)</span>
+        </div>
+        <div class="glass" style="border-left: 3px solid var(--accent-orange); margin: 6px 0; padding: 12px 20px;">
+            <strong style="color: var(--accent-orange);">Layer 5 — Integrations</strong><span style="color: var(--text-dim); margin-left: 1rem;">Slack · JIRA · GitHub · Gmail · Calendar · Notion · Databases</span>
+        </div>
+        <div class="glass" style="border-left: 3px solid var(--text-dim); margin: 6px 0; padding: 12px 20px;">
+            <strong>Layer 6 — Infrastructure</strong><span style="color: var(--text-dim); margin-left: 1rem;">Auth · Audit Log · Rate Limits · Cost Tracking · Security</span>
+        </div>
+    </div>
+    <span class="slide-footer">Team Parallax · IndiaRuns 2026</span>
+    <span class="slide-number">5 / 12</span>
+</div>
+
+<!-- ═══════════ SLIDE 6: HOW IT WORKS ═══════════ -->
+<div class="slide">
+    <h2>How It Works</h2>
+    <h1 class="gradient-text">6-Step Co-Pilot Flow</h1>
+    <p class="key-message">"ASK → PLAN → WATCH → GUIDE → REVIEW → LEARN. Then it gets better."</p>
+
+    <div class="step-flow">
+        <div class="step-box glass">
+            <div class="num" style="background: linear-gradient(135deg, var(--accent-cyan), var(--accent-violet)); color: white;">1</div>
+            <div class="label">ASK</div>
+            <div class="desc">Type what you need</div>
+        </div>
+        <div class="step-arrow">→</div>
+        <div class="step-box glass">
+            <div class="num" style="background: linear-gradient(135deg, var(--accent-cyan), var(--accent-violet)); color: white;">2</div>
+            <div class="label">PLAN</div>
+            <div class="desc">See the task graph</div>
+        </div>
+        <div class="step-arrow">→</div>
+        <div class="step-box glass">
+            <div class="num" style="background: linear-gradient(135deg, var(--accent-cyan), var(--accent-violet)); color: white;">3</div>
+            <div class="label">WATCH</div>
+            <div class="desc">Co-pilots work live</div>
+        </div>
+        <div class="step-arrow">→</div>
+        <div class="step-box glass">
+            <div class="num" style="background: linear-gradient(135deg, var(--accent-cyan), var(--accent-violet)); color: white;">4</div>
+            <div class="label">GUIDE</div>
+            <div class="desc">Decide when asked</div>
+        </div>
+        <div class="step-arrow">→</div>
+        <div class="step-box glass">
+            <div class="num" style="background: linear-gradient(135deg, var(--accent-cyan), var(--accent-violet)); color: white;">5</div>
+            <div class="label">REVIEW</div>
+            <div class="desc">Check the output</div>
+        </div>
+        <div class="step-arrow">→</div>
+        <div class="step-box glass">
+            <div class="num" style="background: linear-gradient(135deg, var(--accent-cyan), var(--accent-violet)); color: white;">6</div>
+            <div class="label">LEARN</div>
+            <div class="desc">Gets smarter</div>
+        </div>
+    </div>
+
+    <div class="glass" style="margin-top: 1rem;">
+        <h3 style="color: var(--accent-yellow); font-size: 0.9rem;">🔒 Confidence-Based Trust — Co-Pilots Earn Autonomy</h3>
+        <div class="code-block" style="margin: 0.5rem 0 0 0; background: transparent; padding: 8px 0;">Confidence > 90%  →  ✅ Does it. Tells you after.
+Confidence 70-90% →  📋 Does it. Holds for your approval.
+Confidence < 70%  →  🤔 Stops. Asks you to decide.</div>
+    </div>
+    <span class="slide-footer">Team Parallax · IndiaRuns 2026</span>
+    <span class="slide-number">6 / 12</span>
+</div>
+
+<!-- ═══════════ SLIDE 7: THREE BREAKTHROUGHS ═══════════ -->
+<div class="slide">
+    <h2>The Three Breakthroughs</h2>
+    <h1 class="gradient-text">Why This Actually Works</h1>
+    <p class="key-message">"Not 'agents with different prompts.' Purpose-built intelligence."</p>
+
+    <div class="card-grid card-grid-3" style="margin-top: 1rem;">
+        <div class="glass" style="border-top: 3px solid var(--accent-cyan);">
+            <h3 style="color: var(--accent-cyan);">1. Task DAG</h3>
+            <p style="font-size: 0.85rem;">Not a to-do list. A <strong>directed acyclic graph</strong> with dependencies, parallelism, and dynamic re-planning. If a co-pilot discovers something unexpected, the system re-plans in real-time.</p>
+        </div>
+        <div class="glass" style="border-top: 3px solid var(--accent-violet);">
+            <h3 style="color: var(--accent-violet);">2. Three-Layer Memory</h3>
+            <p style="font-size: 0.85rem;">
+                📌 <strong>Episodic</strong> → What's happening NOW<br>
+                🧠 <strong>Semantic</strong> → What we KNOW<br>
+                🔄 <strong>Procedural</strong> → What we've LEARNED<br><br>
+                After a month, Parallax knows your preferences cold.
+            </p>
+        </div>
+        <div class="glass" style="border-top: 3px solid var(--accent-green);">
+            <h3 style="color: var(--accent-green);">3. Earned Trust</h3>
+            <p style="font-size: 0.85rem;">Co-pilots start cautious and <strong>earn autonomy</strong> — like a new team member becoming a trusted colleague. Thresholds calibrate per-user, per-task-type, over time.</p>
+        </div>
+    </div>
+    <span class="slide-footer">Team Parallax · IndiaRuns 2026</span>
+    <span class="slide-number">7 / 12</span>
+</div>
+
+<!-- ═══════════ SLIDE 8: LIVE DEMO ═══════════ -->
+<div class="slide">
+    <h2>In Action</h2>
+    <h1 class="gradient-text">From Ask to Done</h1>
+    <p class="key-message">"One sentence in. Board-ready analysis out. 25 minutes."</p>
+
+    <div class="card-grid card-grid-2" style="margin-top: 0.5rem;">
+        <div class="glass" style="border-top: 3px solid var(--accent-cyan);">
+            <h3 style="font-size: 0.9rem;">📝 INPUT (1 sentence)</h3>
+            <p style="font-size: 0.9rem; color: var(--text-primary); font-style: italic;">"Prepare a competitive analysis of AI recruiting tools for our board meeting Tuesday."</p>
+        </div>
+        <div class="glass" style="border-top: 3px solid var(--accent-green);">
+            <h3 style="font-size: 0.9rem;">📦 OUTPUT (25 minutes)</h3>
+            <p style="font-size: 0.85rem;">
+                📄 Strategy Document — 14 pages<br>
+                📋 Executive Summary — 1 page<br>
+                📊 3 charts: market map, features, growth
+            </p>
+        </div>
+    </div>
+
+    <div class="code-block" style="font-size: 0.82rem;">⚡ WHAT PARALLAX DID:
+├── 🔍 Research found 14 competitors + 3 market reports         (8 min)
+├── 📡 Data pulled live market metrics from dashboards           (3 min)
+├── 📊 Analyst built SWOT, feature matrix, market positioning    (7 min)
+├── 💬 ESCALATED: "Conflicting data — user chose IMARC source"
+├── ✍️ Creator drafted 14-page strategy doc                      (8 min)
+├── 🎨 Design created 3 publication-quality charts               (5 min)
+├── 🔐 Compliance added revenue disclaimers                      (1 min)
+└── 🛡️ Quality flagged: "Verify Competitor X pricing (March)"   (2 min)</div>
+
+    <div class="stat-row">
+        <div class="glass" style="text-align: center; flex: 1;">
+            <div style="font-size: 1rem; color: var(--accent-red); text-decoration: line-through;">Without Parallax: 3-4 days</div>
+        </div>
+        <div class="glass" style="text-align: center; flex: 1; border-color: rgba(0,212,255,0.3);">
+            <div style="font-size: 1rem; color: var(--accent-green); font-weight: 700;">With Parallax: 25 min + 1 decision</div>
+        </div>
+    </div>
+    <span class="slide-footer">Team Parallax · IndiaRuns 2026</span>
+    <span class="slide-number">8 / 12</span>
+</div>
+
+<!-- ═══════════ SLIDE 9: COMPETITIVE EDGE ═══════════ -->
+<div class="slide">
+    <h2>Why Parallax Wins</h2>
+    <h1 class="gradient-text">The Competitive Edge</h1>
+    <p class="key-message">"No one else combines 10 co-pilots + persistent memory + quality + compliance."</p>
+
+    <table class="compare-table">
+        <thead>
+            <tr>
+                <th>Capability</th>
+                <th>ChatGPT</th>
+                <th>GitHub Copilot</th>
+                <th>MS Copilot</th>
+                <th>⬡ Parallax</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr><td>Multi-step workflows</td><td class="cross">❌</td><td class="cross">❌</td><td class="warn">⚠️</td><td class="check">✅ Full DAGs</td></tr>
+            <tr><td>Specialized co-pilots</td><td class="cross">❌</td><td class="cross">❌</td><td class="cross">❌</td><td class="check">✅ 10 purpose-built</td></tr>
+            <tr><td>Persistent memory</td><td class="cross">❌</td><td class="cross">❌</td><td class="warn">⚠️</td><td class="check">✅ 3-layer system</td></tr>
+            <tr><td>Real-world actions</td><td class="cross">❌</td><td class="cross">❌</td><td class="warn">⚠️ M365</td><td class="check">✅ Any API</td></tr>
+            <tr><td>Visual design</td><td class="cross">❌</td><td class="cross">❌</td><td class="cross">❌</td><td class="check">✅ Design co-pilot</td></tr>
+            <tr><td>Compliance checks</td><td class="cross">❌</td><td class="cross">❌</td><td class="cross">❌</td><td class="check">✅ Built-in</td></tr>
+            <tr><td>Live data access</td><td class="cross">❌</td><td class="cross">❌</td><td class="warn">⚠️</td><td class="check">✅ Any DB/API</td></tr>
+            <tr><td>Learns over time</td><td class="cross">❌</td><td class="cross">❌</td><td class="cross">❌</td><td class="check">✅ RLHF</td></tr>
+        </tbody>
+    </table>
+    <span class="slide-footer">Team Parallax · IndiaRuns 2026</span>
+    <span class="slide-number">9 / 12</span>
+</div>
+
+<!-- ═══════════ SLIDE 10: MARKET ═══════════ -->
+<div class="slide">
+    <h2>Market & Impact</h2>
+    <h1 class="gradient-text">The Opportunity</h1>
+    <p class="key-message">"100M workers × 2 hours saved/day = ₹3,000 Cr annual impact at 1% adoption."</p>
+
+    <div class="stat-row" style="margin-top: 1rem;">
+        <div class="glass" style="text-align: center;">
+            <div class="big-stat gradient-text" style="font-size:2.8rem;">100M+</div>
+            <div class="stat-label">Knowledge workers in India</div>
+        </div>
+        <div class="glass" style="text-align: center;">
+            <div class="big-stat gradient-text" style="font-size:2.8rem;">62%</div>
+            <div class="stat-label">Workday wasted on coordination</div>
+        </div>
+        <div class="glass" style="text-align: center;">
+            <div class="big-stat gradient-text" style="font-size:2.8rem;">~2h</div>
+            <div class="stat-label">Saved per worker per day</div>
+        </div>
+    </div>
+
+    <div class="stat-row">
+        <div class="glass" style="text-align: center;">
+            <div class="big-stat gradient-text" style="font-size:2.8rem;">₹3L</div>
+            <div class="stat-label">Productivity value per worker/year</div>
+        </div>
+        <div class="glass" style="text-align: center;">
+            <div class="big-stat gradient-text" style="font-size:2.8rem;">$102B</div>
+            <div class="stat-label">Global productivity market 2027</div>
+        </div>
+        <div class="glass" style="text-align: center; border-color: rgba(0,212,255,0.3);">
+            <div class="big-stat" style="font-size:2.8rem; color: var(--accent-green);">₹3,000 Cr</div>
+            <div class="stat-label">Impact at 1% adoption</div>
+        </div>
+    </div>
+    <span class="slide-footer">Team Parallax · IndiaRuns 2026</span>
+    <span class="slide-number">10 / 12</span>
+</div>
+
+<!-- ═══════════ SLIDE 11: ROADMAP ═══════════ -->
+<div class="slide">
+    <h2>Roadmap</h2>
+    <h1 class="gradient-text">Foundation → Marketplace → Intelligence</h1>
+
+    <div class="timeline">
+        <div class="phase glass" style="border-top-color: var(--accent-green);">
+            <h3 style="color: var(--accent-green);">Phase 1 — Foundation</h3>
+            <p style="font-size: 0.75rem; color: var(--text-dim); margin-bottom: 8px;">0-3 months</p>
+            <ul>
+                <li>✅ Core Orchestrator</li>
+                <li>✅ 10 Base Co-Pilots</li>
+                <li>✅ 3-Layer Memory</li>
+                <li>✅ 8 integrations</li>
+                <li>✅ Single-user beta</li>
+            </ul>
+        </div>
+        <div class="phase glass" style="border-top-color: var(--accent-yellow);">
+            <h3 style="color: var(--accent-yellow);">Phase 2 — Expansion</h3>
+            <p style="font-size: 0.75rem; color: var(--text-dim); margin-bottom: 8px;">3-6 months</p>
+            <ul>
+                <li>🔧 Co-Pilot Marketplace</li>
+                <li>🔧 Custom co-pilot builder</li>
+                <li>🔧 Enterprise SSO + RBAC</li>
+                <li>🔧 20+ integrations</li>
+                <li>🔧 Team workspaces</li>
+            </ul>
+        </div>
+        <div class="phase glass" style="border-top-color: var(--accent-violet);">
+            <h3 style="color: var(--accent-violet);">Phase 3 — Intelligence</h3>
+            <p style="font-size: 0.75rem; color: var(--text-dim); margin-bottom: 8px;">6-12 months</p>
+            <ul>
+                <li>🚀 Self-improving RLHF</li>
+                <li>🚀 Industry co-pilot packs</li>
+                <li>🚀 Multi-user collaboration</li>
+                <li>🚀 On-premise deployment</li>
+                <li>🚀 Voice + mobile</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="glass" style="margin-top: 1rem; text-align: center;">
+        <p style="font-size: 0.9rem;"><strong style="color: var(--accent-yellow);">Network Effect:</strong> Phase 2 introduces a <strong>Co-Pilot Marketplace</strong> — users create, share, and discover custom co-pilots. Every new co-pilot makes the platform more valuable.</p>
+    </div>
+    <span class="slide-footer">Team Parallax · IndiaRuns 2026</span>
+    <span class="slide-number">11 / 12</span>
+</div>
+
+<!-- ═══════════ SLIDE 12: CLOSE ═══════════ -->
+<div class="slide" style="justify-content: center; align-items: center; text-align: center;">
+    <h1 style="font-size: 3.5rem; margin-bottom: 1.5rem;" class="gradient-text">That's Parallax.</h1>
+
+    <p style="font-size: 1.3rem; max-width: 700px; line-height: 1.8; color: var(--text-secondary);">
+        The future of work isn't a smarter chatbot.<br>
+        It's a team of AI co-pilots that see your work from every angle,<br>
+        handle the complexity, earn your trust,<br>
+        and get <strong style="color: var(--accent-cyan);">smarter every day</strong>.
+    </p>
+
+    <div class="divider" style="width: 200px; margin: 2rem auto;"></div>
+
+    <div style="margin: 1rem 0;">
+        <span class="badge badge-cyan">10 AI Co-Pilots</span>
+        <span class="badge badge-violet">3-Layer Memory</span>
+        <span class="badge badge-green">Confidence-Based Trust</span>
+    </div>
+
+    <div style="margin-top: 2rem;">
+        <h3 style="color: var(--text-primary);">Team Parallax</h3>
+        <p style="color: var(--text-dim); font-size: 0.9rem;">
+            GitHub: github.com/FrozenLionMax/Parallax
+        </p>
+    </div>
+
+    <p style="margin-top: 2rem; font-size: 0.9rem; color: var(--text-dim);">IndiaRuns Hackathon 2026 · Challenge 1: AI Systems Architect</p>
+    <span class="slide-number">12 / 12</span>
+</div>
+
+</body>
+</html>
