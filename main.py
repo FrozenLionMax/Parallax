@@ -5,8 +5,7 @@
 Interactive demo runner showing the full 6-step co-pilot experience:
   ASK → PLAN → WATCH → GUIDE → REVIEW → LEARN
 
-Team Parallax · IndiaRuns Hackathon 2026
-Challenge 1: The AI Systems Architect — Reimagining Work
+Team Parallax · parallax.ai
 """
 
 import time
@@ -48,7 +47,7 @@ def print_banner():
     ║                                                              ║
     ╚══════════════════════════════════════════════════════════════╝
 {Colors.RESET}
-{Colors.DIM}    Team Parallax · IndiaRuns Hackathon 2026 · Challenge 1{Colors.RESET}
+{Colors.DIM}    Team Parallax · parallax.ai{Colors.RESET}
 """
     print(banner)
 
@@ -282,11 +281,11 @@ def main():
     ║                                                              ║
     ║              ⬡  That's Parallax.                             ║
     ║                                                              ║
-    ║        10 AI Co-Pilots. One task. Smarter every day.          ║
+    ║        11 AI Co-Pilots. One task. Smarter every day.         ║
     ║                                                              ║
     ╚══════════════════════════════════════════════════════════════╝
 {Colors.RESET}
-{Colors.DIM}    github.com/FrozenLionMax/Parallax · Team Parallax · IndiaRuns 2026{Colors.RESET}
+{Colors.DIM}    github.com/FrozenLionMax/Parallax · Team Parallax{Colors.RESET}
 """)
 
 

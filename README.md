@@ -9,15 +9,12 @@
 </p>
 
 <p align="center">
-  <strong>Team Parallax</strong> · IndiaRuns Hackathon 2026<br/>
-  Track 02 — Ideathon · Challenge 1: The AI Systems Architect — Reimagining Work
+  <strong>Team Parallax</strong>
 </p>
 
 ---
 
 ## 📌 Target Challenge
-
-**Challenge 1: The AI Systems Architect — Reimagining Work**
 
 > *Design a groundbreaking, technical AI system. Think fully self-running "agents," super-smart search, complex AI coordination, or intelligent "co-pilots" that dramatically improve how work gets done.*
 
@@ -473,8 +470,6 @@ Phase 1: Foundation            Phase 2: Expansion              Phase 3: Intellig
 |---|---|
 | **Team** | Parallax |
 | **System** | Parallax — AI Co-Pilots That See Work From Every Angle |
-| **Hackathon** | IndiaRuns Hackathon 2026 |
-| **Track** | Ideathon — Challenge 1: AI Systems Architect |
 | **GitHub** | https://github.com/FrozenLionMax/Parallax |
 
 ---

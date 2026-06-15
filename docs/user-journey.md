@@ -419,5 +419,5 @@ A founder needs to identify the best VC matches for their AI startup's Series A.
 
 ---
 
-*Team Parallax · IndiaRuns Hackathon 2026*
+*Team Parallax · AI Co-Pilots That See Work From Every Angle*
 

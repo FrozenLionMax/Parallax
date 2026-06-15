@@ -740,5 +740,5 @@ Every agent action is logged immutably. Enterprise admins can audit exactly what
 
 ---
 
-*This architecture document is maintained by Team Parallax for the IndiaRuns Hackathon 2026.*
+*This architecture document is maintained by Team Parallax.*
 

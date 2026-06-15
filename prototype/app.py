@@ -1,6 +1,6 @@
 """
 Parallax — AI Co-Pilots That See Work From Every Angle
-Interactive Prototype | Team Parallax | IndiaRuns Hackathon 2026
+Interactive Prototype | Team Parallax
 
 This Streamlit app demonstrates the Parallax 6-step user journey
 with 3 pre-built scenarios showing 10 AI co-pilots in action.
@@ -521,7 +521,7 @@ def render_landing():
     st.markdown('<div class="section-divider"></div>', unsafe_allow_html=True)
     st.markdown("""
     <div style="text-align: center; color: #475569; font-size: 0.85rem;">
-        Team Parallax · IndiaRuns Hackathon 2026 · Challenge 1: AI Systems Architect
+        Team Parallax · AI Co-Pilots That See Work From Every Angle
     </div>
     """, unsafe_allow_html=True)
 

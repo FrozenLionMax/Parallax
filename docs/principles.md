@@ -209,4 +209,4 @@ Regardless of industry, Parallax delivers the same core value:
 
 ---
 
-*Team Parallax · AI Co-Pilots That See Work From Every Angle · IndiaRuns Hackathon 2026*
+*Team Parallax · AI Co-Pilots That See Work From Every Angle*

@@ -1,7 +1,7 @@
 # Parallax — Pitch Deck Content (10 Co-Pilots Edition)
 
 > **Slide-by-slide content for the 12-slide pitch deck**
-> **Team Parallax · IndiaRuns Hackathon 2026 · Challenge 1: AI Systems Architect**
+> **Team Parallax · AI Co-Pilots That See Work From Every Angle**
 
 ---
 
@@ -9,7 +9,7 @@
 
 **Title**: ⬡ Parallax
 **Subtitle**: AI Co-Pilots That See Work From Every Angle
-**Details**: Team Parallax · IndiaRuns Hackathon 2026 · Challenge 1: AI Systems Architect — Reimagining Work
+**Details**: Team Parallax · Reimagining How Work Gets Done
 **Badges**: 10 Autonomous Co-Pilots · Multi-Agent Orchestration · Adaptive Memory
 
 **Visual**: Dark premium background. Parallax logo (hexagon with 10 glowing nodes). Clean modern typography.
@@ -260,4 +260,4 @@ Phase 1 (0-3 mo)            Phase 2 (3-6 mo)            Phase 3 (6-12 mo)
 
 ---
 
-*Team Parallax · AI Co-Pilots That See Work From Every Angle · IndiaRuns Hackathon 2026*
+*Team Parallax · AI Co-Pilots That See Work From Every Angle*
