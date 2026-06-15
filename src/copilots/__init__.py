@@ -12,6 +12,7 @@ from src.copilots.agents import (
     DesignCoPilot,
     ComplianceCoPilot,
 )
+from src.copilots.catalyst import CatalystCoPilot
 
 __all__ = [
     "ResearchCoPilot",
@@ -24,4 +25,5 @@ __all__ = [
     "DataCoPilot",
     "DesignCoPilot",
     "ComplianceCoPilot",
+    "CatalystCoPilot",
 ]

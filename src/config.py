@@ -152,6 +152,20 @@ COPILOT_REGISTRY = {
             "Data classification",
         ],
     },
+    "catalyst": {
+        "name": "Catalyst Co-Pilot",
+        "codename": "The Accelerator",
+        "icon": "⚙️",
+        "color": "#6366F1",
+        "description": "Speeds up data flow, pre-fetches data, caches results, and handles overflow.",
+        "capabilities": [
+            "Data pre-fetching & anticipation",
+            "Intermediate result caching",
+            "Payload compression for fast transfer",
+            "DAG optimization & parallelization",
+            "Overflow task handling",
+        ],
+    },
 }
 
 # ─────────────────────── CONFIDENCE THRESHOLDS ───────────────────────

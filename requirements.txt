@@ -1,0 +1,28 @@
+# ─────────────────────────────────────────────
+#  Core
+# ─────────────────────────────────────────────
+fastapi>=0.115.0
+uvicorn>=0.30.0
+pydantic>=2.0.0
+
+# ─────────────────────────────────────────────
+#  Prototype
+# ─────────────────────────────────────────────
+streamlit>=1.38.0
+
+# ─────────────────────────────────────────────
+#  Testing
+# ─────────────────────────────────────────────
+pytest>=8.0.0
+pytest-asyncio>=0.23.0
+httpx>=0.27.0
+
+# ─────────────────────────────────────────────
+#  Production (future)
+# ─────────────────────────────────────────────
+# redis>=5.0.0          # Episodic memory
+# neo4j>=5.0.0          # Semantic memory (knowledge graph)
+# qdrant-client>=1.9.0  # Procedural memory (vector DB)
+# langchain>=0.2.0      # LLM orchestration
+# openai>=1.30.0        # GPT-4o provider
+# anthropic>=0.28.0     # Claude provider

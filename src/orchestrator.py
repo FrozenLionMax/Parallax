@@ -15,6 +15,7 @@ from src.copilots.agents import (
     QualityCoPilot, CommunicationCoPilot, CodeCoPilot,
     DataCoPilot, DesignCoPilot, ComplianceCoPilot,
 )
+from src.copilots.catalyst import CatalystCoPilot
 
 
 class Orchestrator:
@@ -48,7 +49,11 @@ class Orchestrator:
             "data": DataCoPilot(self.memory, self.bus),
             "design": DesignCoPilot(self.memory, self.bus),
             "compliance": ComplianceCoPilot(self.memory, self.bus),
+            "catalyst": CatalystCoPilot(self.memory, self.bus),
         }
+
+        # Cost tracking
+        self._cost_log: list[dict] = []
 
         # Execution state
         self._active_graph: Optional[TaskGraph] = None

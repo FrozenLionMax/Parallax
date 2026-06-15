@@ -1,0 +1,56 @@
+version: "3.9"
+
+services:
+  # ─────────── Parallax API ───────────
+  parallax-api:
+    build: .
+    container_name: parallax-api
+    ports:
+      - "8000:8000"
+    environment:
+      - PYTHONUNBUFFERED=1
+      - PARALLAX_ENV=production
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8000/health"]
+      interval: 30s
+      timeout: 5s
+      retries: 3
+    restart: unless-stopped
+
+  # ─────────── Parallax Prototype (Streamlit) ───────────
+  parallax-prototype:
+    build: .
+    container_name: parallax-prototype
+    ports:
+      - "8501:8501"
+    command: streamlit run prototype/app.py --server.port 8501 --server.address 0.0.0.0
+    environment:
+      - PYTHONUNBUFFERED=1
+    restart: unless-stopped
+
+  # ─────────── Redis (Episodic Memory) ───────────
+  redis:
+    image: redis:7-alpine
+    container_name: parallax-redis
+    ports:
+      - "6379:6379"
+    volumes:
+      - redis_data:/data
+    restart: unless-stopped
+
+  # ─────────── Neo4j (Semantic Memory) ───────────
+  neo4j:
+    image: neo4j:5-community
+    container_name: parallax-neo4j
+    ports:
+      - "7474:7474"  # Browser
+      - "7687:7687"  # Bolt
+    environment:
+      - NEO4J_AUTH=neo4j/parallax2026
+    volumes:
+      - neo4j_data:/data
+    restart: unless-stopped
+
+volumes:
+  redis_data:
+  neo4j_data:
